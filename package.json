@@ -19,35 +19,11 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "next": "12.3.1",
     "autoprefixer": "^10.4.12",
     "eslint": "8.25.0",
     "eslint-config-next": "12.3.1",
     "postcss": "^8.4.18",
     "tailwindcss": "^3.1.8",
-    "browser-sync": "^2.26.3",
-    "gulp": "^4.0.0",
-    "gulp-clean-css": "^4.0.0",
-    "gulp-sass": "^4.0.2",
-    "gulp-autoprefixer": "^6.1.0",
-    "gulp-clean": "^0.4.0",
-    "gulp-concat": "^2.6.1",
-    "gulp-imagemin": "^5.0.3",
-    "gulp-rename": "^1.4.0",
-    "gulp-uglify": "^3.0.2",
-    "imagemin-jpeg-recompress": "^6.0.0",
-    "imagemin-pngquant": "^7.0.0"
-  },
-  "browserslist": [
-    "> 1%",
-    "ie >= 8",
-    "edge >= 15",
-    "ie_mob >= 10",
-    "ff >= 45",
-    "chrome >= 45",
-    "safari >= 7",
-    "opera >= 23",
-    "ios >= 7",
-    "android >= 4"
-  ]
+    "browser-sync": "^2.26.3"
+  }
 }
