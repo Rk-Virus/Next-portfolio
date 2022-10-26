@@ -118,7 +118,7 @@ export default function Home() {
               </li>
             </ul>
             <ul className="navbar-nav brand">
-              <img src="/imgs/avatar.jpg" className="brand-img" />
+              <img src="/imgs/avatar.jpg" className="brand-img" alt="" />
               <li className="brand-txt">
                 <h5 className="brand-title">Rk Virus</h5>
                 <div className="brand-subtitle">Developer</div>
@@ -320,7 +320,7 @@ export default function Home() {
                   <p className="subtitle">
                     I love chemisty! Although there are a lot of exceptions but
                     there a reason behind every exception. In my words -
-                    "Chemisty is the mystery of electrons."
+                    &quot;Chemisty is the mystery of electrons.&quot;
                   </p>
                   <hr />
                   <br />
@@ -537,7 +537,7 @@ export default function Home() {
                 <div className="card-body px-4 py-3">
                   <h5 className="mb-3 card-title text-dark">Content Writing</h5>
                   <p className="subtitle">
-                    With vast knowledge in Technology and Chemisty, it's my
+                    With vast knowledge in Technology and Chemisty, it is my
                     habbit to research and write my perspective or stories that
                     are fun to read. You can explore my blogs in the blogs
                     section.
@@ -1006,11 +1006,11 @@ export default function Home() {
       </footer>
 
       {/* scripts...  */}
-      <script
+      <Script
         src="https://code.jquery.com/jquery-3.6.1.min.js"
         integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
         crossOrigin="anonymous"
-      ></script>
+      ></Script>
       {/* <!-- core  --> */}
       <Script src="/assets/vendors/jquery/jquery-3.4.1.js"></Script>
 
