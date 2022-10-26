@@ -148,69 +148,78 @@ export default function Home() {
       <div className="container-fluid">
         <div id="about" className="row about-section">
           <div className="col-lg-4 about-card">
-            <h3 className="font-weight-light">Who am I ?</h3>
+            <h3 className="font-weight-light header-title">Who am I ?</h3>
             <span className="line mb-5"></span>
             <h5 className="mb-3">
               A Web Designer / Developer Located In Our Lovely Earth
             </h5>
-            <p className="mt-20">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.sit amet,
-              Qui deserunt consequatur fugit repellendusillo voluptas?
+            <p className="mt-10">
+              I work for the world to make it better, and in between I am
+              getting better. Download my CV to know my current version...
             </p>
             <button className="btn btn-outline-danger">
               <i className="icon-down-circled2 "></i>Download My CV
             </button>
           </div>
           <div className="col-lg-4 about-card">
-            <h3 className="font-weight-light">Personal Info</h3>
+            <h3 className="font-weight-light header-title">Personal Info</h3>
             <span className="line mb-5"></span>
             <ul className="mt40 info list-unstyled">
               <li>
-                <span>Birthdate</span> : 09/13/1996
+                <span>Birthdate</span> : 10/03/2003
               </li>
               <li>
-                <span>Email</span> : info@website.com
+                <span>Email</span> : Ravim70655@gmail.com
               </li>
               <li>
-                <span>Phone</span> : + (123) 456-7890
+                <span>Phone</span> : +91 9625686379
               </li>
               <li>
-                <span>Skype</span> : John_Doe{" "}
+                <span>Real Name</span> : Ravi Mishra{" "}
               </li>
               <li>
-                <span>Address</span> : 12345 Fake ST NoWhere AB Country.
+                <span>Address</span> : Uttam Nagar, New Delhi, India
               </li>
             </ul>
+
             <ul className="social-icons pt-3">
               <li className="social-item">
-                <a className="social-link" href="#">
+                <a
+                  className="social-link"
+                  href="https://www.facebook.com/profile.php?id=100013192479846"
+                >
                   <i className="ti-facebook" aria-hidden="true"></i>
                 </a>
               </li>
               <li className="social-item">
-                <a className="social-link" href="#">
+                <a
+                  className="social-link"
+                  href="https://twitter.com/rkmishra2003"
+                >
                   <i className="ti-twitter" aria-hidden="true"></i>
                 </a>
               </li>
+
               <li className="social-item">
-                <a className="social-link" href="#">
-                  <i className="ti-google" aria-hidden="true"></i>
-                </a>
-              </li>
-              <li className="social-item">
-                <a className="social-link" href="#">
+                <a
+                  className="social-link"
+                  href="https://instagram.com/ravi.m2003"
+                >
                   <i className="ti-instagram" aria-hidden="true"></i>
                 </a>
               </li>
               <li className="social-item">
-                <a className="social-link" href="#">
-                  <i className="ti-github" aria-hidden="true"></i>
+                <a
+                  className="social-link"
+                  href="https://linkedin.com/in/ravi-mishra-135b681a5/"
+                >
+                  <i className="ti-linkedin" aria-hidden="true"></i>
                 </a>
               </li>
             </ul>
           </div>
           <div className="col-lg-4 about-card">
-            <h3 className="font-weight-light">My Expertise</h3>
+            <h3 className="font-weight-light header-title">My Expertise</h3>
             <span className="line mb-5"></span>
             <div className="row">
               <div className="col-1 text-danger pt-1">
@@ -218,7 +227,10 @@ export default function Home() {
               </div>
               <div className="col-10 ml-auto mr-3">
                 <h6>UX Design</h6>
-                <p className="subtitle"> exercitat Repellendus, corrupt.</p>
+                <p className="subtitle">
+                  {" "}
+                  I design frontend for web, apps and softwares
+                </p>
                 <hr />
               </div>
             </div>
@@ -228,7 +240,9 @@ export default function Home() {
               </div>
               <div className="col-10 ml-auto mr-3">
                 <h6>Web Development</h6>
-                <p className="subtitle">Lorem ipsum dolor sit consectetur.</p>
+                <p className="subtitle">
+                  I work most as front end but can work as fullstack developer
+                </p>
                 <hr />
               </div>
             </div>
@@ -238,7 +252,10 @@ export default function Home() {
               </div>
               <div className="col-10 ml-auto mr-3">
                 <h6>Digital Marketing</h6>
-                <p className="subtitle">voluptate commodi illo voluptatib.</p>
+                <p className="subtitle">
+                  SEO, google console, keywords, listing, and all are point of
+                  concert for my projects
+                </p>
                 <hr />
               </div>
             </div>
@@ -249,41 +266,42 @@ export default function Home() {
       {/* <!--Resume Section--> */}
       <section className="section" id="resume">
         <div className="container">
-          <h2 className="mb-5">
+          <h2 className="mb-5 header-title">
             <span className="text-danger">My</span> Resume
           </h2>
           <div className="row">
             <div className="col-md-6 col-lg-4">
               <div className="card">
                 <div className="card-header">
-                  <div className="mt-2">
-                    <h4>Expertise</h4>
+                  <div className="mt-2 font-weight-bold">
+                    <h4>My Timeline</h4>
                     <span className="line"></span>
                   </div>
                 </div>
                 <div className="card-body">
-                  <h6 className="title text-danger">2017 - Present</h6>
+                  <h6 className="title text-danger">2021 - Present</h6>
                   <p>UX Developer</p>
                   <p className="subtitle">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Nostrum recusandae, cupiditate ullam dolor ratione
-                    repellendus.aliquid repudiandae saepe!.
+                    I work as a UX, enhancing interactivity with buttons,
+                    animations, and more fun with JavaScript on the web and
+                    apps.
                   </p>
                   <hr />
-                  <h6 className="title text-danger">2016 - 2017</h6>
+                  <br />
+                  <h6 className="title text-danger">2020 - 2021</h6>
                   <p>Front-end Developer</p>
                   <p className="subtitle">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Nostrum recusandae, cupiditate ullam dolor ratione
-                    repellendus.aliquid repudiandae saepe!.
+                    Learned some HTML, CSS and JS to create some basic login
+                    forms, landing pages, etc.
                   </p>
                   <hr />
-                  <h6 className="title text-danger">2015 - 2016</h6>
-                  <p>UX Designer</p>
+                  <br />
+                  <h6 className="title text-danger">past - 2020</h6>
+                  <p>Student</p>
                   <p className="subtitle">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Nostrum recusandae, cupiditate ullam dolor ratione
-                    repellendus.aliquid repudiandae saepe!.
+                    A science student, interested in Does it work? if it works
+                    how it works? Still Learning chemistry as to persue my
+                    research carrier in science.
                   </p>
                 </div>
               </div>
@@ -291,34 +309,35 @@ export default function Home() {
             <div className="col-md-6 col-lg-4">
               <div className="card">
                 <div className="card-header">
-                  <div className="mt-2">
+                  <div className="mt-2 font-weight-bold">
                     <h4>Education</h4>
                     <span className="line"></span>
                   </div>
                 </div>
                 <div className="card-body">
-                  <h6 className="title text-danger">2017 - Present</h6>
-                  <p>B.E Computer Engineering</p>
+                  <h6 className="title text-danger">2020 - Present</h6>
+                  <p>B.Sc. (H) Chemisty</p>
                   <p className="subtitle">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Error corrupti recusandae obcaecati odit repellat ducimus
-                    cum, minus tempora aperiam at.
+                    I love chemisty! Although there are a lot of exceptions but
+                    there a reason behind every exception. In my words -
+                    "Chemisty is the mystery of electrons."
                   </p>
                   <hr />
-                  <h6 className="title text-danger">2016 - 2017</h6>
-                  <p>Diploma in Computer Engineering</p>
+                  <br />
+                  <h6 className="title text-danger">2018 - 2020</h6>
+                  <p>Science Student</p>
                   <p className="subtitle">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Eos, id officiis quas placeat quia voluptas dolorum rem
-                    animi nostrum quae.aliquid repudiandae saepe!.
+                    I learnt science i.e. chemistry, physics and mathmatics. I
+                    performed experiments, derived equations and still applying
+                    the theories and logic in real life.
                   </p>
                   <hr />
-                  <h6 className="title text-danger">2015 - 2016</h6>
-                  <p>High School Degree</p>
+                  <br />
+                  <h6 className="title text-danger">past - 2018</h6>
+                  <p>Senior Secondry School</p>
                   <p className="subtitle">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Nostrum recusandae, cupiditate ullam dolor ratione
-                    repellendus.aliquid repudiandae saepe!.
+                    Learnt general subjects like general science, social
+                    science, etc. and participated in many competitions.
                   </p>
                 </div>
               </div>
@@ -332,7 +351,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="card-body pb-2">
-                  <h6>hTL5 &amp; CSS3</h6>
+                  <h6>HTML5 &amp; CSS3</h6>
                   <div className="progress mb-3">
                     <div
                       className="progress-bar bg-danger w1"
@@ -352,7 +371,7 @@ export default function Home() {
                       aria-valuemax="100"
                     ></div>
                   </div>
-                  <h6>PHP</h6>
+                  <h6>React</h6>
                   <div className="progress mb-3">
                     <div
                       className="progress-bar bg-danger w3"
@@ -362,7 +381,7 @@ export default function Home() {
                       aria-valuemax="100"
                     ></div>
                   </div>
-                  <h6>SQL</h6>
+                  <h6>Python</h6>
                   <div className="progress mb-3">
                     <div
                       className="progress-bar bg-danger w4"
@@ -372,17 +391,7 @@ export default function Home() {
                       aria-valuemax="100"
                     ></div>
                   </div>
-                  <h6>Laborum</h6>
-                  <div className="progress mb-3">
-                    <div
-                      className="progress-bar bg-danger w4"
-                      role="progressbar"
-                      aria-valuenow="75"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    ></div>
-                  </div>
-                  <h6>Tempora</h6>
+                  <h6>C/C++</h6>
                   <div className="progress mb-3">
                     <div
                       className="progress-bar bg-danger w4"
@@ -402,12 +411,22 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="card-body pb-2">
+                  <h6>Hindi</h6>
+                  <div className="progress mb-3">
+                    <div
+                      className="progress-bar bg-danger w2"
+                      role="progressbar"
+                      aria-valuenow="25"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
                   <h6>English</h6>
                   <div className="progress mb-3">
                     <div
-                      className="progress-bar bg-danger w3"
+                      className="progress-bar bg-danger w6"
                       role="progressbar"
-                      aria-valuenow="25"
+                      aria-valuenow="50"
                       aria-valuemin="0"
                       aria-valuemax="100"
                     ></div>
@@ -418,16 +437,6 @@ export default function Home() {
                       className="progress-bar bg-danger w5"
                       role="progressbar"
                       aria-valuenow="25"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    ></div>
-                  </div>
-                  <h6>Spanish</h6>
-                  <div className="progress mb-3">
-                    <div
-                      className="progress-bar bg-danger w6"
-                      role="progressbar"
-                      aria-valuenow="50"
                       aria-valuemin="0"
                       aria-valuemax="100"
                     ></div>
@@ -450,7 +459,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="col-7 text-left py-3">
-                  <h1 className="text-danger font-weight-bold font40">500</h1>
+                  <h1 className="text-danger font-weight-bold font40">500+</h1>
                   <p className="text-light mb-1">Hours Worked</p>
                 </div>
               </div>
@@ -463,7 +472,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="col-7 text-left py-3">
-                  <h1 className="text-danger font-weight-bold font40">50K</h1>
+                  <h1 className="text-danger font-weight-bold font40">50+</h1>
                   <p className="text-light mb-1">Project Finished</p>
                 </div>
               </div>
@@ -476,7 +485,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="col-7 text-left py-3">
-                  <h1 className="text-danger font-weight-bold font40">200K</h1>
+                  <h1 className="text-danger font-weight-bold font40">2+</h1>
                   <p className="text-light mb-1">Happy Clients</p>
                 </div>
               </div>
@@ -489,7 +498,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="col-7 text-left py-3">
-                  <h1 className="text-danger font-weight-bold font40">2k</h1>
+                  <h1 className="text-danger font-weight-bold font40">0</h1>
                   <p className="text-light mb-1">Coffee Drinked</p>
                 </div>
               </div>
@@ -500,7 +509,7 @@ export default function Home() {
 
       <section className="section" id="service">
         <div className="container">
-          <h2 className="mb-5 pb-4">
+          <h2 className="mb-5 pb-4 header-title">
             <span className="text-danger">My</span> Services
           </h2>
           <div className="row">
@@ -510,14 +519,12 @@ export default function Home() {
                   <i className="ti-vector text-danger" aria-hidden="true"></i>
                 </div>
                 <div className="card-body px-4 py-3">
-                  <h5 className="mb-3 card-title text-dark">Ullam</h5>
+                  <h5 className="mb-3 card-title text-dark">Developer</h5>
                   <p className="subtitle">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Ullam commodi provident, dolores reiciendis enim pariatur
-                    error optio, tempora ex, nihil nesciunt! In praesentium sunt
-                    commodi, unde ipsam ex veritatis laboriosam dolor asperiores
-                    suscipit blanditiis, dignissimos quos nesciunt nulla aperiam
-                    officia.
+                    I am always available to work in a team or handle the
+                    project alone irrespective of technology used. Due to my
+                    fast and ever-learning attitude, I never face problems . Can
+                    work as developer/manager.
                   </p>
                 </div>
               </div>
@@ -528,54 +535,30 @@ export default function Home() {
                   <i className="ti-write text-danger" aria-hidden="true"></i>
                 </div>
                 <div className="card-body px-4 py-3">
-                  <h5 className="mb-3 card-title text-dark">Asperiores</h5>
+                  <h5 className="mb-3 card-title text-dark">Content Writing</h5>
                   <p className="subtitle">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Ullam commodi provident, dolores reiciendis enim pariatur
-                    error optio, tempora ex, nihil nesciunt! In praesentium sunt
-                    commodi, unde ipsam ex veritatis laboriosam dolor asperiores
-                    suscipit blanditiis, dignissimos quos nesciunt nulla aperiam
-                    officia.
+                    With vast knowledge in Technology and Chemisty, it's my
+                    habbit to research and write my perspective or stories that
+                    are fun to read. You can explore my blogs in the blogs
+                    section.
                   </p>
                 </div>
               </div>
             </div>
-            <div className="col-md-4 col-sm-6">
-              <div className="card mb-5">
-                <div className="card-header has-icon">
-                  <i className="ti-package text-danger" aria-hidden="true"></i>
-                </div>
-                <div className="card-body px-4 py-3">
-                  <h5 className="mb-3 card-title text-dark">Tempora</h5>
-                  <p className="subtitle">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Ullam commodi provident, dolores reiciendis enim pariatur
-                    error optio, tempora ex, nihil nesciunt! In praesentium sunt
-                    commodi, unde ipsam ex veritatis laboriosam dolor asperiores
-                    suscipit blanditiis, dignissimos quos nesciunt nulla aperiam
-                    officia.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-4 col-sm-6">
+
+            {/* <div className="col-md-4 col-sm-6">
               <div className="card mb-5">
                 <div className="card-header has-icon">
                   <i className="ti-map-alt text-danger" aria-hidden="true"></i>
                 </div>
                 <div className="card-body px-4 py-3">
-                  <h5 className="mb-3 card-title text-dark">Provident</h5>
+                  <h5 className="mb-3 card-title text-dark">Mentor</h5>
                   <p className="subtitle">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Ullam commodi provident, dolores reiciendis enim pariatur
-                    error optio, tempora ex, nihil nesciunt! In praesentium sunt
-                    commodi, unde ipsam ex veritatis laboriosam dolor asperiores
-                    suscipit blanditiis, dignissimos quos nesciunt nulla aperiam
-                    officia.
+                    I can guide you if are lost in life, if you think me as a good example. From studies to having fun in life. It's my free time while telling people - why am I persuing Chemisty Hons degree?
                   </p>
                 </div>
               </div>
-            </div>
+            </div> */}
             <div className="col-md-4 col-sm-6">
               <div className="card mb-5">
                 <div className="card-header has-icon">
@@ -585,32 +568,13 @@ export default function Home() {
                   ></i>
                 </div>
                 <div className="card-body px-4 py-3">
-                  <h5 className="mb-3 card-title text-dark">Consectetur</h5>
+                  <h5 className="mb-3 card-title text-dark">
+                    Digital Marketing
+                  </h5>
                   <p className="subtitle">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Ullam commodi provident, dolores reiciendis enim pariatur
-                    error optio, tempora ex, nihil nesciunt! In praesentium sunt
-                    commodi, unde ipsam ex veritatis laboriosam dolor asperiores
-                    suscipit blanditiis, dignissimos quos nesciunt nulla aperiam
-                    officia.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-4 col-sm-6">
-              <div className="card mb-5">
-                <div className="card-header has-icon">
-                  <i className="ti-support text-danger" aria-hidden="true"></i>
-                </div>
-                <div className="card-body px-4 py-3">
-                  <h5 className="mb-3 card-title text-dark">Veritatis</h5>
-                  <p className="subtitle">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Ullam commodi provident, dolores reiciendis enim pariatur
-                    error optio, tempora ex, nihil nesciunt! In praesentium sunt
-                    commodi, unde ipsam ex veritatis laboriosam dolor asperiores
-                    suscipit blanditiis, dignissimos quos nesciunt nulla aperiam
-                    officia.
+                    I learnt digital marketing through my internship
+                    @MR-marketer and also applied/applying SEO and listing
+                    techniques on every project onwards...
                   </p>
                 </div>
               </div>
@@ -618,16 +582,16 @@ export default function Home() {
           </div>
         </div>
       </section>
-
+{/* 
       <section className="section bg-custom-gray" id="price">
         <div className="container">
-          <h1 className="mb-5">
-            <span className="text-danger">Packs</span> Pricing
+          <h1 className="mb-5 header-title">
+            <span className="text-danger">Average</span> Pricing
           </h1>
           <div className="row align-items-center">
             <div className="col-md-6 col-lg-3">
               <div className="price-card text-center mb-4">
-                <h3 className="price-card-title">Free</h3>
+                <h3 className="price-card-title">Advice</h3>
                 <div className="price-card-cost">
                   <sup className="ti-money"></sup>
                   <span className="num">0</span>
@@ -635,50 +599,23 @@ export default function Home() {
                 </div>
                 <ul className="list">
                   <li className="list-item">
-                    5 <span className="text-muted">Project</span>
+                    Any <span className="text-muted">Project</span>
                   </li>
                   <li className="list-item">
-                    1GB <span className="text-muted">Storage</span>
+                    Any <span className="text-muted">Question</span>
                   </li>
                   <li className="list-item">
-                    <span className="text-muted">No Domain</span>
-                  </li>
-                  <li className="list-item">
-                    1 <span className="text-muted">User</span>
+                    Any <span className="text-muted">User</span>
                   </li>
                 </ul>
-                <button className="btn btn-primary btn-rounded w-lg">
-                  Subscribe
-                </button>
+                <a href="#contact">
+                  <button className="btn btn-primary btn-rounded w-lg">
+                    Ask Now
+                  </button>
+                </a>
               </div>
             </div>
-            <div className="col-md-6 col-lg-3">
-              <div className="price-card text-center mb-4">
-                <h3 className="price-card-title">Basic</h3>
-                <div className="price-card-cost">
-                  <sup className="ti-money"></sup>
-                  <span className="num">10</span>
-                  <span className="date">MO</span>
-                </div>
-                <ul className="list">
-                  <li className="list-item">
-                    50 <span className="text-muted">Project</span>
-                  </li>
-                  <li className="list-item">
-                    10GB <span className="text-muted">Storage</span>
-                  </li>
-                  <li className="list-item">
-                    1<span className="text-muted">Domain</span>
-                  </li>
-                  <li className="list-item">
-                    5 <span className="text-muted">User</span>
-                  </li>
-                </ul>
-                <button className="btn btn-primary btn-rounded w-lg">
-                  Subscribe
-                </button>
-              </div>
-            </div>
+            
             <div className="col-md-6 col-lg-3">
               <div className="price-card text-center price-card-requried mb-4">
                 <h3 className="price-card-title">Exclusive</h3>
@@ -692,7 +629,6 @@ export default function Home() {
                     150 <span className="text-muted">Project</span>
                   </li>
                   <li className="list-item">
-                    15GB <span className="text-muted">Storage</span>
                   </li>
                   <li className="list-item">
                     5<span className="text-muted"> Domain</span>
@@ -706,43 +642,17 @@ export default function Home() {
                 </button>
               </div>
             </div>
-            <div className="col-md-6 col-lg-3">
-              <div className="price-card text-center mb-4">
-                <h3 className="price-card-title">Pro</h3>
-                <div className="price-card-cost">
-                  <sup className="ti-money"></sup>
-                  <span className="num">99</span>
-                  <span className="date">MO</span>
-                </div>
-                <ul className="list">
-                  <li className="list-item">
-                    500 <span className="text-muted">Project</span>
-                  </li>
-                  <li className="list-item">
-                    1000GB <span className="text-muted">Storage</span>
-                  </li>
-                  <li className="list-item">
-                    10<span className="text-muted"> Domain</span>
-                  </li>
-                  <li className="list-item">
-                    Unlimite<span className="text-muted">User</span>
-                  </li>
-                </ul>
-                <button className="btn btn-primary btn-rounded w-lg">
-                  Subscribe
-                </button>
-              </div>
-            </div>
+            
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section className="section bg-dark py-5">
         <div className="container text-center">
           <h2 className="text-light mb-5 font-weight-normal">
-            I Am Available For FreeLance
+            I am Available aor Freelance
           </h2>
-          <button className="btn bg-primary w-lg">Hire me</button>
+          <button className="btn btn-primary w-lg">Hire me</button>
         </div>
       </section>
 
@@ -758,8 +668,7 @@ export default function Home() {
               <a href="#" className="active">
                 New
               </a>
-              <a href="#">Advertising</a>
-              <a href="#">Branding</a>
+              <a href="#">Apps</a>
               <a href="#">Web</a>
             </div>
             <div className="portfolio-container">
@@ -889,47 +798,32 @@ export default function Home() {
 
       <section className="section" id="blog">
         <div className="container">
-          <h2 className="mb-5">
-            Latest <span className="text-danger">News</span>
+          <h2 className="mb-5 title header-title">
+            Latest <span className="text-danger">Blogs</span>
           </h2>
           <div className="row">
             <div className="blog-card">
               <div className="img-holder">
-                <img
-                  src="/imgs/blog1.jpg"
-                  alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
-                />
+                <img src="/imgs/blog1.jpg" alt="content writing blog image"/>
               </div>
               <div className="content-holder">
-                <h6 className="title">Consectetur adipisicing elit</h6>
+                <h6 className="title">Content Writing</h6>
 
                 <p className="post-details">
-                  <a href="#">By: Admin</a>
+                  <a href="#">By: Me</a>
                   <a href="#">
-                    <i className="ti-heart text-danger"></i> 234
+                    <i className="ti-heart text-danger"></i> 2
                   </a>
                   <a href="#">
-                    <i className="ti-comment"></i> 123
+                    <i className="ti-comment"></i> 1
                   </a>
                 </p>
 
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet
-                  nesciunt qui sit velit delectus voluptates, repellat ipsum
-                  culpa id deleniti. Rerum debitis facilis accusantium neque
-                  numquam mollitia modi quasi distinctio.
-                </p>
-
-                <p>
-                  <b>
-                    Necessitatibus nihil impedit! Ex nisi eveniet, dolor aliquid
-                    consequuntur repudiandae.
-                  </b>
-                </p>
-                <p>
-                  Magnam in repellat enim harum omnis aperiam! Explicabo illo,
-                  commodi, dolor blanditiis cupiditate harum nisi vero accusamus
-                  laudantium voluptatibus dolores quae obcaecati.
+                  Content writing is an amazing field of creativity where you
+                  tell the story with your perspective. There are a lot of
+                  imformative, interesting or statistical content on internet
+                  that will blow your mind!
                 </p>
 
                 <a href="#" className="read-more">
@@ -942,65 +836,25 @@ export default function Home() {
             {/* <!-- blog-card --> */}
             <div className="blog-card">
               <div className="img-holder">
-                <img
-                  src="/imgs/blog2.jpg"
-                  alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
-                />
+                <img src="/imgs/blog2.jpg" alt="blog image on plants" />
               </div>
               <div className="content-holder">
-                <h6 className="title">Explicabo illo</h6>
+                <h6 className="title">How to grow plants?</h6>
 
                 <p className="post-details">
-                  <a href="#">By: Admin</a>
+                  <a href="#">By: Me</a>
                   <a href="#">
-                    <i className="ti-heart text-danger"></i> 456
+                    <i className="ti-heart text-danger"></i> 6
                   </a>
                   <a href="#">
-                    <i className="ti-comment"></i> 264
+                    <i className="ti-comment"></i> 4
                   </a>
                 </p>
 
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Impedit excepturi laborum enim, vitae ipsam atque eum, ad
-                  iusto consequuntur voluptas, esse doloribus. Perferendis
-                  commodi soluta distinctio sit repudiandae possimus sunt.
-                  Ipsum, rem.
-                </p>
-
-                <a href="#" className="read-more">
-                  Read more <i className="ti-angle-double-right"></i>
-                </a>
-              </div>
-            </div>
-            {/* <!-- end of blog wrapper --> */}
-
-            {/* <!-- blog-card --> */}
-            <div className="blog-card">
-              <div className="img-holder">
-                <img
-                  src="/imgs/blog3.jpg"
-                  alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
-                />
-              </div>
-              <div className="content-holder">
-                <h4 className="title">Porro Quisqua</h4>
-
-                <p className="post-details">
-                  <a href="#">By: Admin</a>
-                  <a href="#">
-                    <i className="ti-heart text-danger"></i> 431
-                  </a>
-                  <a href="#">
-                    <i className="ti-comment"></i> 312
-                  </a>
-                </p>
-
-                <p>
-                  doloribus. Esse vitae earum architecto nulla non dolores illum
-                  at perspiciatis quod, et deleniti cupiditate reiciendis harum
-                  facere, delectus eum commodi soluta distinctio sit repudiandae
-                  possimus sunt. Ipsum, rem.
+                  Would you believe someone teaching you how to grow a plant or
+                  you saw a tutorial on this as you are seeing this blog? Ya in
+                  reality growing plants is not so easy as you thing...
                 </p>
 
                 <a href="#" className="read-more">
@@ -1012,134 +866,133 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <hr/>
-      
+      <hr />
+
       <section className="section" id="contact">
-      <div className="container">
-        <div className="row">
-          <div className="col-lg-8">
-            <div className="contact-form-card">
-              <h4 className="contact-title">Send a message</h4>
-              <form action="">
-                <div className="form-group">
-                  <input
-                    className="form-control"
-                    type="text"
-                    placeholder="Name *"
-                    required
-                  />
-                </div>
-                <div className="form-group">
-                  <input
-                    className="form-control"
-                    type="email"
-                    placeholder="Email *"
-                    required
-                  />
-                </div>
-                <div className="form-group">
-                  <textarea
-                    className="form-control"
-                    placeholder="Message "
-                    rows="7"
-                    required
-                  ></textarea>
-                </div>
-                <div className="form-group ">
-                  <button
-                    type="submit"
-                    className="text-dark font-weight-bold form-control btn btn-primary"
-                  >
-                    Send Message
-                  </button>
-                </div>
-              </form>
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-8">
+              <div className="contact-form-card">
+                <h4 className="contact-title">Send a message</h4>
+                <form action="">
+                  <div className="form-group">
+                    <input
+                      className="form-control"
+                      type="text"
+                      placeholder="Name *"
+                      required
+                    />
+                  </div>
+                  <div className="form-group">
+                    <input
+                      className="form-control"
+                      type="email"
+                      placeholder="Email *"
+                      required
+                    />
+                  </div>
+                  <div className="form-group">
+                    <textarea
+                      className="form-control"
+                      placeholder="Message "
+                      rows="7"
+                      required
+                    ></textarea>
+                  </div>
+                  <div className="form-group ">
+                    <button
+                      type="submit"
+                      className="form-control btn btn-outline-primary"
+                    >
+                      Send Message
+                    </button>
+                  </div>
+                </form>
+              </div>
             </div>
-          </div>
-          <div className="col-lg-4">
-            <div className="contact-info-card">
-              <h4 className="contact-title">Get in touch</h4>
-              <div className="row mb-2">
-                <div className="col-1 pt-1 mr-1">
-                  <i className="ti-mobile icon-md"></i>
+            <div className="col-lg-4">
+              <div className="contact-info-card">
+                <h4 className="contact-title">Get in touch</h4>
+                <div className="row mb-2">
+                  <div className="col-1 pt-1 mr-1">
+                    <i className="ti-mobile icon-md"></i>
+                  </div>
+                  <div className="col-10 ">
+                    <h6 className="d-inline">
+                      Phone : <br />
+                      <span className="text-muted">+91 9625686379</span>
+                    </h6>
+                  </div>
                 </div>
-                <div className="col-10 ">
-                  <h6 className="d-inline">
-                    Phone : <br />
-                    <span className="text-muted">+91 9625686379</span>
-                  </h6>
+                <div className="row mb-2">
+                  <div className="col-1 pt-1 mr-1">
+                    <i className="ti-map-alt icon-md"></i>
+                  </div>
+                  <div className="col-10">
+                    <h6 className="d-inline">
+                      Address :<br />{" "}
+                      <span className="text-muted">Uttam Nagar, New Delhi</span>
+                    </h6>
+                  </div>
                 </div>
-              </div>
-              <div className="row mb-2">
-                <div className="col-1 pt-1 mr-1">
-                  <i className="ti-map-alt icon-md"></i>
+                <div className="row mb-2">
+                  <div className="col-1 pt-1 mr-1">
+                    <i className="ti-envelope icon-md"></i>
+                  </div>
+                  <div className="col-10">
+                    <h6 className="d-inline">
+                      Email :<br />{" "}
+                      <span className="text-muted">ravim70655@gmail.com</span>
+                    </h6>
+                  </div>
                 </div>
-                <div className="col-10">
-                  <h6 className="d-inline">
-                    Address :<br />{" "}
-                    <span className="text-muted">
-                      Uttam Nagar, New Delhi
-                    </span>
-                  </h6>
-                </div>
-              </div>
-              <div className="row mb-2">
-                <div className="col-1 pt-1 mr-1">
-                  <i className="ti-envelope icon-md"></i>
-                </div>
-                <div className="col-10">
-                  <h6 className="d-inline">
-                    Email :<br />{" "}
-                    <span className="text-muted">ravim70655@gmail.com</span>
-                  </h6>
-                </div>
-              </div>
 
-              <ul className="social-icons pt-4">
-            <li className="social-item">
-              <a
-                className="social-link text-dark"
-                href="https://www.facebook.com/profile.php?id=100013192479846"
-              >
-                <i className="ti-facebook" aria-hidden="true"></i>
-              </a>
-            </li>
-            <li className="social-item">
-              <a
-                className="social-link text-dark"
-                href="https://twitter.com/rkmishra2003"
-              >
-                <i className="ti-twitter" aria-hidden="true"></i>
-              </a>
-            </li>
+                <ul className="social-icons pt-4">
+                  <li className="social-item">
+                    <a
+                      className="social-link text-dark"
+                      href="https://www.facebook.com/profile.php?id=100013192479846"
+                    >
+                      <i className="ti-facebook" aria-hidden="true"></i>
+                    </a>
+                  </li>
+                  <li className="social-item">
+                    <a
+                      className="social-link text-dark"
+                      href="https://twitter.com/rkmishra2003"
+                    >
+                      <i className="ti-twitter" aria-hidden="true"></i>
+                    </a>
+                  </li>
 
-            <li className="social-item">
-              <a
-                className="social-link text-dark"
-                href="https://instagram.com/ravi.m2003"
-              >
-                <i className="ti-instagram" aria-hidden="true"></i>
-              </a>
-            </li>
-            <li className="social-item">
-              <a
-                className="social-link text-dark"
-                href="https://linkedin.com/in/ravi-mishra-135b681a5/"
-              >
-                <i className="ti-linkedin" aria-hidden="true"></i>
-              </a>
-            </li>
-          </ul>
+                  <li className="social-item">
+                    <a
+                      className="social-link text-dark"
+                      href="https://instagram.com/ravi.m2003"
+                    >
+                      <i className="ti-instagram" aria-hidden="true"></i>
+                    </a>
+                  </li>
+                  <li className="social-item">
+                    <a
+                      className="social-link text-dark"
+                      href="https://linkedin.com/in/ravi-mishra-135b681a5/"
+                    >
+                      <i className="ti-linkedin" aria-hidden="true"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-      </div>
       </section>
 
       <footer className="footer py-3">
         <div className="container">
           <p className="small mb-0 text-light">
-            &copy; 2022 Created With {" "}<i className="ti-heart text-danger"></i>&nbsp; By {" "}
+            &copy; 2022 Created With <i className="ti-heart text-danger"></i>
+            &nbsp; By{" "}
             <a href="#" target="_blank">
               <span
                 className="text-danger"
