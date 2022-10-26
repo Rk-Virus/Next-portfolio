@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Script from "next/script";
 
-import { createClient } from "next-sanity";
+// import { createClient } from "next-sanity";
 
 export default function Home() {
   return (
@@ -31,37 +31,49 @@ export default function Home() {
         <div className="container">
           <ul className="social-icons pt-3">
             <li className="social-item">
-              <a className="social-link text-light" href="#">
+              <a
+                className="social-link text-light"
+                href="https://www.facebook.com/profile.php?id=100013192479846"
+              >
                 <i className="ti-facebook" aria-hidden="true"></i>
               </a>
             </li>
             <li className="social-item">
-              <a className="social-link text-light" href="#">
+              <a
+                className="social-link text-light"
+                href="https://twitter.com/rkmishra2003"
+              >
                 <i className="ti-twitter" aria-hidden="true"></i>
               </a>
             </li>
+
             <li className="social-item">
-              <a className="social-link text-light" href="#">
-                <i className="ti-google" aria-hidden="true"></i>
-              </a>
-            </li>
-            <li className="social-item">
-              <a className="social-link text-light" href="#">
+              <a
+                className="social-link text-light"
+                href="https://instagram.com/ravi.m2003"
+              >
                 <i className="ti-instagram" aria-hidden="true"></i>
               </a>
             </li>
             <li className="social-item">
-              <a className="social-link text-light" href="#">
-                <i className="ti-github" aria-hidden="true"></i>
+              <a
+                className="social-link text-light"
+                href="https://linkedin.com/in/ravi-mishra-135b681a5/"
+              >
+                <i className="ti-linkedin" aria-hidden="true"></i>
               </a>
             </li>
           </ul>
-          <div className="header-content">
-            <h4 className="header-subtitle">Hello, I am</h4>
+          <div className="header-content mx-5">
+            <h4 className="header-subtitle pb-1 pl-1">Hello, I am</h4>
             <h1 className="header-title">Rk Virus</h1>
             <h6 className="header-mono">An Unofficial Developer</h6>
             <button className="btn btn-primary btn-rounded">
-              <i className="ti-printer pr-2"></i>Download Resume
+              <Link href="https://github.com/Rk-Virus">
+                <div>
+                  <i className="ti-new-window pr-2"></i>Visit my GitHub Profile
+                </div>
+              </Link>
             </button>
           </div>
         </div>
@@ -90,7 +102,7 @@ export default function Home() {
           >
             <ul className="navbar-nav mr-auto">
               <li className="nav-item">
-                <a href="#home" className="nav-link">
+                <a href="#" className="nav-link">
                   Home
                 </a>
               </li>
@@ -1000,7 +1012,9 @@ export default function Home() {
           </div>
         </div>
       </section>
-
+      <hr/>
+      
+      <section className="section" id="contact">
       <div className="container">
         <div className="row">
           <div className="col-lg-8">
@@ -1034,7 +1048,7 @@ export default function Home() {
                 <div className="form-group ">
                   <button
                     type="submit"
-                    className="text-dark form-control btn btn-primary"
+                    className="text-dark font-weight-bold form-control btn btn-primary"
                   >
                     Send Message
                   </button>
@@ -1051,8 +1065,8 @@ export default function Home() {
                 </div>
                 <div className="col-10 ">
                   <h6 className="d-inline">
-                    Phone : <br />{" "}
-                    <span className="text-muted">+ (123) 456-789</span>
+                    Phone : <br />
+                    <span className="text-muted">+91 9625686379</span>
                   </h6>
                 </div>
               </div>
@@ -1064,7 +1078,7 @@ export default function Home() {
                   <h6 className="d-inline">
                     Address :<br />{" "}
                     <span className="text-muted">
-                      12345 Fake ST NoWhere AB Country.
+                      Uttam Nagar, New Delhi
                     </span>
                   </h6>
                 </div>
@@ -1076,46 +1090,56 @@ export default function Home() {
                 <div className="col-10">
                   <h6 className="d-inline">
                     Email :<br />{" "}
-                    <span className="text-muted">info@website.com</span>
+                    <span className="text-muted">ravim70655@gmail.com</span>
                   </h6>
                 </div>
               </div>
+
               <ul className="social-icons pt-4">
-                <li className="social-item">
-                  <a className="social-link text-dark" href="#">
-                    <i className="ti-facebook" aria-hidden="true"></i>
-                  </a>
-                </li>
-                <li className="social-item">
-                  <a className="social-link text-dark" href="#">
-                    <i className="ti-twitter" aria-hidden="true"></i>
-                  </a>
-                </li>
-                <li className="social-item">
-                  <a className="social-link text-dark" href="#">
-                    <i className="ti-google" aria-hidden="true"></i>
-                  </a>
-                </li>
-                <li className="social-item">
-                  <a className="social-link text-dark" href="#">
-                    <i className="ti-instagram" aria-hidden="true"></i>
-                  </a>
-                </li>
-                <li className="social-item">
-                  <a className="social-link text-dark" href="#">
-                    <i className="ti-github" aria-hidden="true"></i>
-                  </a>
-                </li>
-              </ul>
+            <li className="social-item">
+              <a
+                className="social-link text-dark"
+                href="https://www.facebook.com/profile.php?id=100013192479846"
+              >
+                <i className="ti-facebook" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li className="social-item">
+              <a
+                className="social-link text-dark"
+                href="https://twitter.com/rkmishra2003"
+              >
+                <i className="ti-twitter" aria-hidden="true"></i>
+              </a>
+            </li>
+
+            <li className="social-item">
+              <a
+                className="social-link text-dark"
+                href="https://instagram.com/ravi.m2003"
+              >
+                <i className="ti-instagram" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li className="social-item">
+              <a
+                className="social-link text-dark"
+                href="https://linkedin.com/in/ravi-mishra-135b681a5/"
+              >
+                <i className="ti-linkedin" aria-hidden="true"></i>
+              </a>
+            </li>
+          </ul>
             </div>
           </div>
         </div>
       </div>
+      </section>
 
       <footer className="footer py-3">
         <div className="container">
           <p className="small mb-0 text-light">
-            &copy; 2022 Created With <i className="ti-heart text-danger"></i> By{" "}
+            &copy; 2022 Created With {" "}<i className="ti-heart text-danger"></i>&nbsp; By {" "}
             <a href="#" target="_blank">
               <span
                 className="text-danger"
