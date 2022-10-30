@@ -813,7 +813,7 @@ const Home = ({ posts }) => {
           <div className="row">
             {posts.map((post) => {
               return (
-                  <div className="blog-card" id={post.slug.current}>
+                  <div className="blog-card" key={post.slug.current}>
                     <div className="img-holder">
                       <img
                         // src="/imgs/blog1.jpg"
