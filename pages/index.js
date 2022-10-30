@@ -1,10 +1,18 @@
 import Link from "next/link";
 import Image from "next/image";
 import Script from "next/script";
+import PortableText from "react-portable-text";
+import imageUrlBuilder from "@sanity/image-url";
+import myConfiguredSanityClient from "../client";
 
-// import { createClient } from "next-sanity";
-
-export default function Home() {
+// sanity image builder
+const builder = imageUrlBuilder(myConfiguredSanityClient);
+function urlFor(source) {
+  const url = (source == undefined)? source = "/imgs/blog1.jpg": source = builder.image(source).width(650).url();
+  return url;
+}
+const Home = ({ posts }) => {
+  // console.log(posts);
   return (
     <>
       <style jsx>{`
@@ -582,7 +590,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-{/* 
+      {/* 
       <section className="section bg-custom-gray" id="price">
         <div className="container">
           <h1 className="mb-5 header-title">
@@ -658,7 +666,7 @@ export default function Home() {
 
       {/* <!-- Portfolio Section --> */}
       <section className="section bg-custom-gray" id="portfolio">
-        <div className="container">
+        <div className="container header-title">
           <h1 className="mb-5">
             <span className="text-danger">My</span> Portfolio
           </h1>
@@ -801,68 +809,57 @@ export default function Home() {
           <h2 className="mb-5 title header-title">
             Latest <span className="text-danger">Blogs</span>
           </h2>
+
           <div className="row">
-            <div className="blog-card">
-              <div className="img-holder">
-                <img src="/imgs/blog1.jpg" alt="content writing blog image"/>
-              </div>
-              <div className="content-holder">
-                <h6 className="title">Content Writing</h6>
+            {posts.map((post) => {
+              return (
+                  <div className="blog-card" id={post.slug.current}>
+                    <div className="img-holder">
+                      <img
+                        // src="/imgs/blog1.jpg"
+                        src={urlFor(post.mainImage)}
+                        alt="content writing blog image"
+                      />
+                    </div>
+                    <div className="content-holder">
+                      <h6 className="title">{post.title}</h6>
 
-                <p className="post-details">
-                  <a href="#">By: Me</a>
-                  <a href="#">
-                    <i className="ti-heart text-danger"></i> 2
-                  </a>
-                  <a href="#">
-                    <i className="ti-comment"></i> 1
-                  </a>
-                </p>
+                      <p className="post-details">
+                        <a href="#">by me</a>
+                        <a href="#">
+                          <i className="ti-heart text-danger"></i> 2
+                        </a>
+                        <a href="#">
+                          <i className="ti-comment"></i> 1
+                        </a>
+                      </p>
 
-                <p>
-                  Content writing is an amazing field of creativity where you
-                  tell the story with your perspective. There are a lot of
-                  imformative, interesting or statistical content on internet
-                  that will blow your mind!
-                </p>
+                      {/* <p>
+                  {post.body[0].children[0].text}
+                </p> */}
+                      {/* alternative  */}
+                      <PortableText
+                        // Pass in block content straight from Sanity.io
+                        content={post.body}
+                        // Optionally override marks, decorators, blocks, etc. in a flat
+                        // structure without doing any gymnastics
+                        serializers={{
+                          h1: (props) => (
+                            <h1 style={{ color: "red" }} {...props} />
+                          ),
+                          li: ({ children }) => (
+                            <li className="special-list-item">{children}</li>
+                          ),
+                        }}
+                      />
 
-                <a href="#" className="read-more">
-                  Read more <i className="ti-angle-double-right"></i>
-                </a>
-              </div>
-            </div>
-            {/* <!-- end of blog wrapper --> */}
-
-            {/* <!-- blog-card --> */}
-            <div className="blog-card">
-              <div className="img-holder">
-                <img src="/imgs/blog2.jpg" alt="blog image on plants" />
-              </div>
-              <div className="content-holder">
-                <h6 className="title">How to grow plants?</h6>
-
-                <p className="post-details">
-                  <a href="#">By: Me</a>
-                  <a href="#">
-                    <i className="ti-heart text-danger"></i> 6
-                  </a>
-                  <a href="#">
-                    <i className="ti-comment"></i> 4
-                  </a>
-                </p>
-
-                <p>
-                  Would you believe someone teaching you how to grow a plant or
-                  you saw a tutorial on this as you are seeing this blog? Ya in
-                  reality growing plants is not so easy as you thing...
-                </p>
-
-                <a href="#" className="read-more">
-                  Read more <i className="ti-angle-double-right"></i>
-                </a>
-              </div>
-            </div>
-            {/* <!-- end of blog wrapper --> */}
+                      <a href="#" className="read-more">
+                        Read more <i className="ti-angle-double-right"></i>
+                      </a>
+                    </div>
+                  </div>
+              );
+            })}
           </div>
         </div>
       </section>
@@ -1020,23 +1017,16 @@ export default function Home() {
       <Script src="/assets/vendors/bootstrap/bootstrap.affix.js"></Script>
     </>
   );
-}
+};
+export default Home;
 
-export async function getStaticProps() {
-  const animals = [
-    {
-      _createdAt: "2022-03-08T09:28:00Z",
-      _id: "1f69c53d-418a-452f-849a-e92466bb9c75",
-      _rev: "xnBg0xhUDzo561jnWODd5e",
-      _type: "animal",
-      _updatedAt: "2022-03-08T09:28:00Z",
-      name: "Capybara",
-    },
-  ];
+export async function getServerSideProps() {
+  const client = myConfiguredSanityClient;
+
+  const query = `*[_type == "post"] | order(publishedAt desc)`;
+  const posts = await client.fetch(query);
 
   return {
-    props: {
-      animals,
-    },
+    props: { posts },
   };
 }
