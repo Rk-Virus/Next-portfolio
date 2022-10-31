@@ -8,7 +8,10 @@ import myConfiguredSanityClient from "../client";
 // sanity image builder
 const builder = imageUrlBuilder(myConfiguredSanityClient);
 function urlFor(source) {
-  const url = (source == undefined)? source = "/imgs/blog1.jpg": source = builder.image(source).width(650).url();
+  const url =
+    source == undefined
+      ? (source = "/imgs/blog1.jpg")
+      : (source = builder.image(source).width(650).url());
   return url;
 }
 const Home = ({ posts }) => {
@@ -163,10 +166,14 @@ const Home = ({ posts }) => {
             </h5>
             <p className="mt-10">
               I work for the world to make it better, and in between I am
-              getting better. Download my CV to know my current version...
+              getting better. Download my Resume to know my current version...
             </p>
             <button className="btn btn-outline-danger">
-              <i className="icon-down-circled2 "></i>Download My CV
+              <Link href="/my resume.pdf" scroll={false}>
+                <a target="_blank">
+                  <i className="icon-down-circled2"></i>Download My Resume
+                </a>
+              </Link>
             </button>
           </div>
           <div className="col-lg-4 about-card">
@@ -700,28 +707,6 @@ const Home = ({ posts }) => {
                   </div>
                 </div>
 
-                <div className="col-md-6 col-lg-4 advertising">
-                  <div className="portfolio-item">
-                    <img
-                      src="/imgs/advertising-1.jpg"
-                      className="img-fluid"
-                      alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates"
-                    />
-                    <div className="content-holder">
-                      <a
-                        className="img-popup"
-                        href="/imgs/advertising-1.jpg"
-                      ></a>
-                      <div className="text-holder">
-                        <h6 className="title">ADVERSITING</h6>
-                        <p className="subtitle">
-                          Expedita corporis doloremque velit in totam!
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
                 <div className="col-md-6 col-lg-4 web new">
                   <div className="portfolio-item">
                     <img
@@ -752,44 +737,6 @@ const Home = ({ posts }) => {
                       <a className="img-popup" href="/imgs/web-3.jpg"></a>
                       <div className="text-holder">
                         <h6 className="title">WEB</h6>
-                        <p className="subtitle">
-                          Expedita corporis doloremque velit in totam!
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="col-md-6 col-lg-4 web new">
-                  <div className="portfolio-item">
-                    <img
-                      src="/imgs/web-3.jpg"
-                      className="img-fluid"
-                      alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates"
-                    />
-                    <div className="content-holder">
-                      <a className="img-popup" href="/imgs/web-3.jpg"></a>
-                      <div className="text-holder">
-                        <h6 className="title">WEB</h6>
-                        <p className="subtitle">
-                          Expedita corporis doloremque velit in totam!
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="col-md-6 col-lg-4 branding">
-                  <div className="portfolio-item">
-                    <img
-                      src="/imgs/branding-5.jpg"
-                      className="img-fluid"
-                      alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates"
-                    />
-                    <div className="content-holder">
-                      <a className="img-popup" href="/imgs/branding-5.jpg"></a>
-                      <div className="text-holder">
-                        <h6 className="title">BRANDING</h6>
                         <p className="subtitle">
                           Expedita corporis doloremque velit in totam!
                         </p>
@@ -813,51 +760,51 @@ const Home = ({ posts }) => {
           <div className="row">
             {posts.map((post) => {
               return (
-                  <div className="blog-card" key={post.slug.current}>
-                    <div className="img-holder">
-                      <img
-                        // src="/imgs/blog1.jpg"
-                        src={urlFor(post.mainImage)}
-                        alt="content writing blog image"
-                      />
-                    </div>
-                    <div className="content-holder">
-                      <h6 className="title">{post.title}</h6>
+                <div className="blog-card" key={post.slug.current}>
+                  <div className="img-holder">
+                    <img
+                      // src="/imgs/blog1.jpg"
+                      src={urlFor(post.mainImage)}
+                      alt="content writing blog image"
+                    />
+                  </div>
+                  <div className="content-holder">
+                    <h6 className="title">{post.title}</h6>
 
-                      <p className="post-details">
-                        <a href="#">by me</a>
-                        <a href="#">
-                          <i className="ti-heart text-danger"></i> 2
-                        </a>
-                        <a href="#">
-                          <i className="ti-comment"></i> 1
-                        </a>
-                      </p>
+                    <p className="post-details">
+                      <a href="#">by me</a>
+                      <a href="#">
+                        <i className="ti-heart text-danger"></i> 2
+                      </a>
+                      <a href="#">
+                        <i className="ti-comment"></i> 1
+                      </a>
+                    </p>
 
-                      {/* <p>
+                    {/* <p>
                   {post.body[0].children[0].text}
                 </p> */}
-                      {/* alternative  */}
-                      <PortableText
-                        // Pass in block content straight from Sanity.io
-                        content={post.body}
-                        // Optionally override marks, decorators, blocks, etc. in a flat
-                        // structure without doing any gymnastics
-                        serializers={{
-                          h1: (props) => (
-                            <h1 style={{ color: "red" }} {...props} />
-                          ),
-                          li: ({ children }) => (
-                            <li className="special-list-item">{children}</li>
-                          ),
-                        }}
-                      />
+                    {/* alternative  */}
+                    <PortableText
+                      // Pass in block content straight from Sanity.io
+                      content={post.body}
+                      // Optionally override marks, decorators, blocks, etc. in a flat
+                      // structure without doing any gymnastics
+                      serializers={{
+                        h1: (props) => (
+                          <h1 style={{ color: "red" }} {...props} />
+                        ),
+                        li: ({ children }) => (
+                          <li className="special-list-item">{children}</li>
+                        ),
+                      }}
+                    />
 
-                      <a href="#" className="read-more">
-                        Read more <i className="ti-angle-double-right"></i>
-                      </a>
-                    </div>
+                    <a href="#" className="read-more">
+                      Read more <i className="ti-angle-double-right"></i>
+                    </a>
                   </div>
+                </div>
               );
             })}
           </div>
