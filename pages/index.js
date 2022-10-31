@@ -169,7 +169,7 @@ const Home = ({ posts }) => {
               getting better. Download my Resume to know my current version...
             </p>
             <button className="btn btn-outline-danger">
-              <Link href="/my resume.pdf" scroll={false}>
+              <Link href="/my-resume.pdf" scroll={false}>
                 <a target="_blank">
                   <i className="icon-down-circled2"></i>Download My Resume
                 </a>
