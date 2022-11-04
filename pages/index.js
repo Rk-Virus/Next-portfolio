@@ -6,6 +6,8 @@ import myConfiguredSanityClient from "../client";
 
 //components
 import Navbar from "../components/Navbar";
+import Header from "../components/Header";
+import SocialHandles from "../components/SocialHandles";
 
 // sanity image builder
 const builder = imageUrlBuilder(myConfiguredSanityClient);
@@ -40,57 +42,8 @@ const Home = ({ posts }) => {
           width: 67%;
         }
       `}</style>
-      <header className="header">
-        <div className="container">
-          <ul className="social-icons pt-3">
-            <li className="social-item">
-              <a
-                className="social-link text-light"
-                href="https://www.facebook.com/profile.php?id=100013192479846"
-              >
-                <i className="ti-facebook" aria-hidden="true"></i>
-              </a>
-            </li>
-            <li className="social-item">
-              <a
-                className="social-link text-light"
-                href="https://twitter.com/rkmishra2003"
-              >
-                <i className="ti-twitter" aria-hidden="true"></i>
-              </a>
-            </li>
 
-            <li className="social-item">
-              <a
-                className="social-link text-light"
-                href="https://instagram.com/ravi.m2003"
-              >
-                <i className="ti-instagram" aria-hidden="true"></i>
-              </a>
-            </li>
-            <li className="social-item">
-              <a
-                className="social-link text-light"
-                href="https://linkedin.com/in/ravi-mishra-135b681a5/"
-              >
-                <i className="ti-linkedin" aria-hidden="true"></i>
-              </a>
-            </li>
-          </ul>
-          <div className="header-content mx-5">
-            <h4 className="header-subtitle pb-1 pl-1">Hello, I am</h4>
-            <h1 className="header-title">Rk Virus</h1>
-            <h6 className="header-mono">An Unofficial Developer</h6>
-            <button className="btn btn-primary btn-rounded">
-              <Link href="https://github.com/Rk-Virus">
-                <div>
-                  <i className="ti-new-window pr-2"></i>Visit my GitHub Profile
-                </div>
-              </Link>
-            </button>
-          </div>
-        </div>
-      </header>
+      <Header />
 
       <Navbar />
       
@@ -135,41 +88,7 @@ const Home = ({ posts }) => {
               </li>
             </ul>
 
-            <ul className="social-icons pt-3">
-              <li className="social-item">
-                <a
-                  className="social-link"
-                  href="https://www.facebook.com/profile.php?id=100013192479846"
-                >
-                  <i className="ti-facebook" aria-hidden="true"></i>
-                </a>
-              </li>
-              <li className="social-item">
-                <a
-                  className="social-link"
-                  href="https://twitter.com/rkmishra2003"
-                >
-                  <i className="ti-twitter" aria-hidden="true"></i>
-                </a>
-              </li>
-
-              <li className="social-item">
-                <a
-                  className="social-link"
-                  href="https://instagram.com/ravi.m2003"
-                >
-                  <i className="ti-instagram" aria-hidden="true"></i>
-                </a>
-              </li>
-              <li className="social-item">
-                <a
-                  className="social-link"
-                  href="https://linkedin.com/in/ravi-mishra-135b681a5/"
-                >
-                  <i className="ti-linkedin" aria-hidden="true"></i>
-                </a>
-              </li>
-            </ul>
+            <SocialHandles />
           </div>
           <div className="col-lg-4 about-card">
             <h3 className="font-weight-light header-title">My Expertise</h3>
@@ -829,41 +748,7 @@ const Home = ({ posts }) => {
                   </div>
                 </div>
 
-                <ul className="social-icons pt-4">
-                  <li className="social-item">
-                    <a
-                      className="social-link text-dark"
-                      href="https://www.facebook.com/profile.php?id=100013192479846"
-                    >
-                      <i className="ti-facebook" aria-hidden="true"></i>
-                    </a>
-                  </li>
-                  <li className="social-item">
-                    <a
-                      className="social-link text-dark"
-                      href="https://twitter.com/rkmishra2003"
-                    >
-                      <i className="ti-twitter" aria-hidden="true"></i>
-                    </a>
-                  </li>
-
-                  <li className="social-item">
-                    <a
-                      className="social-link text-dark"
-                      href="https://instagram.com/ravi.m2003"
-                    >
-                      <i className="ti-instagram" aria-hidden="true"></i>
-                    </a>
-                  </li>
-                  <li className="social-item">
-                    <a
-                      className="social-link text-dark"
-                      href="https://linkedin.com/in/ravi-mishra-135b681a5/"
-                    >
-                      <i className="ti-linkedin" aria-hidden="true"></i>
-                    </a>
-                  </li>
-                </ul>
+                <SocialHandles />
               </div>
             </div>
           </div>

@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Script from "next/script";
 import "../styles/globals.css";
 import "../public/assets/vendors/themify-icons/css/themify-icons.css";
 
