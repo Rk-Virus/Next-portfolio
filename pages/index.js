@@ -46,7 +46,7 @@ const Home = ({ posts }) => {
 
       <Header />
 
-      <Navbar />
+      <Navbar showProfile={true} />
       
       <div className="container-fluid">
         <div id="about" className="row about-section">

@@ -20,7 +20,7 @@ function urlFor(source) {
 function Blogs({ posts }) {
   return (
     <>
-        <style jsx>{`
+      <style jsx>{`
         .w1 {
           width: 97%;
         }
@@ -41,8 +41,8 @@ function Blogs({ posts }) {
         }
       `}</style>
 
-        <Navbar />
-        <section className="section pt-4" id="blog">
+      <Navbar showProfile={false} />
+      <section className="section pt-4" id="blog">
         <div className="container">
           <h2 className="mb-3 title header-title">
             Latest <span className="text-danger">Blogs</span>
@@ -103,21 +103,31 @@ function Blogs({ posts }) {
       </section>
       <hr />
 
+      {/* scripts...  */}
+      <Script
+        src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+        crossOrigin="anonymous"
+      ></Script>
       {/* <!-- core  --> */}
       <Script src="/assets/vendors/jquery/jquery-3.4.1.js"></Script>
+
+      <Script src="/assets/vendors/bootstrap/bootstrap.bundle.js"></Script>
+
+      {/* <!-- bootstrap 3 affix --> */}
+      <Script src="/assets/vendors/bootstrap/bootstrap.affix.js"></Script>
     </>
   )
 }
 export default Blogs
 
 export async function getServerSideProps() {
-    const client = myConfiguredSanityClient;
-  
-    const query = `*[_type == "post"] | order(publishedAt desc)`;
-    const posts = await client.fetch(query);
-  
-    return {
-      props: { posts },
-    };
-  }
-  
+  const client = myConfiguredSanityClient;
+
+  const query = `*[_type == "post"] | order(publishedAt desc)`;
+  const posts = await client.fetch(query);
+
+  return {
+    props: { posts },
+  };
+}

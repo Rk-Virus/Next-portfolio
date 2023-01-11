@@ -1,6 +1,7 @@
 import React from 'react'
+import Link from 'next/link'
 
-function Navbar() {
+function Navbar({showProfile}) {
   return (
     <nav
         className="navbar sticky-top navbar-expand-lg navbar-light bg-white"
@@ -25,21 +26,28 @@ function Navbar() {
           >
             <ul className="navbar-nav mr-auto">
               <li className="nav-item">
-                <a href="/" className="nav-link">
+                <Link href="/">
+                <a className="nav-link">
                   Home
                 </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a href="#about" className="nav-link">
+              <Link href="#about">
+                <a className="nav-link">
                   About
                 </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a href="#resume" className="nav-link">
+              <Link href="#resume">
+                <a className="nav-link">
                   Resume
                 </a>
+                </Link>
               </li>
             </ul>
+            {showProfile && (
             <ul className="navbar-nav brand">
               <img src="/imgs/avatar.jpg" className="brand-img" alt="profile img" />
               <li className="brand-txt">
@@ -47,21 +55,28 @@ function Navbar() {
                 <div className="brand-subtitle">Developer</div>
               </li>
             </ul>
+            )}
             <ul className="navbar-nav ml-auto">
               <li className="nav-item">
-                <a href="#portfolio" className="nav-link">
+              <Link href="#portfolio">
+                <a className="nav-link">
                   Portfolio
                 </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a href="/blogs" className="nav-link">
+              <Link href="/blogs">
+                <a className="nav-link">
                   Blogs
                 </a>
+                </Link>
               </li>
               <li className="nav-item last-item">
-                <a href="#contact" className="nav-link">
+              <Link href="#contact">
+                <a className="nav-link">
                   Contact
                 </a>
+                </Link>
               </li>
             </ul>
           </div>
