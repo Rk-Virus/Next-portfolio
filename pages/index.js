@@ -8,6 +8,7 @@ import myConfiguredSanityClient from "../client";
 import Navbar from "../components/Navbar";
 import Header from "../components/Header";
 import SocialHandles from "../components/SocialHandles";
+import Portfolio from "../components/Portfolio";
 
 // sanity image builder
 const builder = imageUrlBuilder(myConfiguredSanityClient);
@@ -529,145 +530,7 @@ const Home = ({ posts }) => {
       </section>
 
       {/* <!-- Portfolio Section --> */}
-      <section className="section bg-custom-gray" id="portfolio">
-        <div className="container header-title">
-          <h1 className="mb-5">
-            <span className="text-danger">My</span> Portfolio
-          </h1>
-
-          <div className="portfolio">
-            <div className="filters">
-              <a href="#" className="active">
-                New
-              </a>
-              <a href="#">Apps</a>
-              <a href="#">Web</a>
-            </div>
-            <div className="portfolio-container">
-              <div className="row">
-                <div className="col-md-6 col-lg-4 web new">
-                  <div className="portfolio-item">
-                    <img
-                      src="/imgs/web-2.jpg"
-                      className="img-fluid"
-                      alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates"
-                    />
-                    <div className="content-holder">
-                      <a className="img-popup" href="/imgs/web-2.jpg"></a>
-                      <div className="text-holder">
-                        <h6 className="title">WEB</h6>
-                        <p className="subtitle">
-                          Expedita corporis doloremque velit in totam!
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="col-md-6 col-lg-4 web new">
-                  <div className="portfolio-item">
-                    <img
-                      src="/imgs/web-3.jpg"
-                      className="img-fluid"
-                      alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates"
-                    />
-                    <div className="content-holder">
-                      <a className="img-popup" href="/imgs/web-3.jpg"></a>
-                      <div className="text-holder">
-                        <h6 className="title">WEB</h6>
-                        <p className="subtitle">
-                          Expedita corporis doloremque velit in totam!
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="col-md-6 col-lg-4 web new">
-                  <div className="portfolio-item">
-                    <img
-                      src="/imgs/web-3.jpg"
-                      className="img-fluid"
-                      alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates"
-                    />
-                    <div className="content-holder">
-                      <a className="img-popup" href="/imgs/web-3.jpg"></a>
-                      <div className="text-holder">
-                        <h6 className="title">WEB</h6>
-                        <p className="subtitle">
-                          Expedita corporis doloremque velit in totam!
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      {/* <!-- End of portfolio section --> */}
-
-      <section className="section" id="blog">
-        <div className="container">
-          <h2 className="mb-5 title header-title">
-            Latest <span className="text-danger">Blogs</span>
-          </h2>
-
-          <div className="row">
-            {posts.map((post) => {
-              return (
-                <div className="blog-card" key={post.slug.current}>
-                  <div className="img-holder">
-                    <img
-                      // src="/imgs/blog1.jpg"
-                      src={urlFor(post.mainImage)}
-                      alt="content writing blog image"
-                    />
-                  </div>
-                  <div className="content-holder">
-                    <h6 className="title">{post.title}</h6>
-
-                    <p className="post-details">
-                      <a href="#">by me</a>
-                      <a href="#">
-                        <i className="ti-heart text-danger"></i> 2
-                      </a>
-                      <a href="#">
-                        <i className="ti-comment"></i> 1
-                      </a>
-                    </p>
-
-                    {/* <p>
-                  {post.body[0].children[0].text}
-                </p> */}
-                    {/* alternative  */}
-                    <PortableText
-                      // Pass in block content straight from Sanity.io
-                      content={post.body}
-                      // Optionally override marks, decorators, blocks, etc. in a flat
-                      // structure without doing any gymnastics
-                      serializers={{
-                        h1: (props) => (
-                          <h1 style={{ color: "red" }} {...props} />
-                        ),
-                        li: ({ children }) => (
-                          <li className="special-list-item">{children}</li>
-                        ),
-                      }}
-                    />
-
-                    <a href="#" className="read-more">
-                      Read more <i className="ti-angle-double-right"></i>
-                    </a>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-      <hr />
+      {/* <Portfolio /> */}
 
       <section className="section" id="contact">
         <div className="container">

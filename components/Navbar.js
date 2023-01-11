@@ -25,7 +25,7 @@ function Navbar() {
           >
             <ul className="navbar-nav mr-auto">
               <li className="nav-item">
-                <a href="#" className="nav-link">
+                <a href="/" className="nav-link">
                   Home
                 </a>
               </li>
@@ -41,7 +41,7 @@ function Navbar() {
               </li>
             </ul>
             <ul className="navbar-nav brand">
-              <img src="/imgs/avatar.jpg" className="brand-img" alt="" />
+              <img src="/imgs/avatar.jpg" className="brand-img" alt="profile img" />
               <li className="brand-txt">
                 <h5 className="brand-title">Rk Virus</h5>
                 <div className="brand-subtitle">Developer</div>
@@ -54,8 +54,8 @@ function Navbar() {
                 </a>
               </li>
               <li className="nav-item">
-                <a href="#blog" className="nav-link">
-                  Blog
+                <a href="/blogs" className="nav-link">
+                  Blogs
                 </a>
               </li>
               <li className="nav-item last-item">
