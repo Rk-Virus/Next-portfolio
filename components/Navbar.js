@@ -33,14 +33,14 @@ function Navbar({showProfile}) {
                 </Link>
               </li>
               <li className="nav-item">
-              <Link href="#about">
+              <Link href="/#about">
                 <a className="nav-link">
                   About
                 </a>
                 </Link>
               </li>
               <li className="nav-item">
-              <Link href="#resume">
+              <Link href="/#resume">
                 <a className="nav-link">
                   Resume
                 </a>
@@ -58,7 +58,7 @@ function Navbar({showProfile}) {
             )}
             <ul className="navbar-nav ml-auto">
               <li className="nav-item">
-              <Link href="#portfolio">
+              <Link href="/#portfolio">
                 <a className="nav-link">
                   Portfolio
                 </a>
@@ -72,7 +72,7 @@ function Navbar({showProfile}) {
                 </Link>
               </li>
               <li className="nav-item last-item">
-              <Link href="#contact">
+              <Link href="/#contact">
                 <a className="nav-link">
                   Contact
                 </a>

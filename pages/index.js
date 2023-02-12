@@ -538,12 +538,14 @@ const Home = ({ posts }) => {
             <div className="col-lg-8">
               <div className="contact-form-card">
                 <h4 className="contact-title">Send a message</h4>
-                <form action="">
+
+                <form action="https://formspree.io/f/xayzeprr" method="post">
                   <div className="form-group">
                     <input
                       className="form-control"
                       type="text"
                       placeholder="Name *"
+                      name="name"
                       required
                     />
                   </div>
@@ -552,6 +554,7 @@ const Home = ({ posts }) => {
                       className="form-control"
                       type="email"
                       placeholder="Email *"
+                      name="email"
                       required
                     />
                   </div>
@@ -560,6 +563,7 @@ const Home = ({ posts }) => {
                       className="form-control"
                       placeholder="Message "
                       rows="7"
+                      name="message"
                       required
                     ></textarea>
                   </div>
