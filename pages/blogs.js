@@ -45,7 +45,7 @@ function Blogs({ posts }) {
       <section className="section pt-4" id="blog">
         <div className="container">
           <h2 className="mb-3 title header-title">
-            Latest <span className="text-danger">Blogs</span>
+            All <span className="text-danger">Blogs</span>
           </h2>
 
           <div className="row">
@@ -56,11 +56,13 @@ function Blogs({ posts }) {
                     <img
                       // src="/imgs/blog1.jpg"
                       src={urlFor(post.mainImage)}
-                      alt="content writing blog image"
+                      alt="blog image"
                     />
                   </div>
                   <div className="content-holder">
+                    <a href={"/blog/"+post.slug.current}>
                     <h6 className="title">{post.title}</h6>
+                    </a>
 
                     <p className="post-details">
                       <a href="#">by me</a>
@@ -91,7 +93,7 @@ function Blogs({ posts }) {
                       }}
                     />
 
-                    <a href="#" className="read-more">
+                    <a href={"/blog/"+post.slug.current} className="read-more">
                       Read more <i className="ti-angle-double-right"></i>
                     </a>
                   </div>

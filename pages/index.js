@@ -530,7 +530,7 @@ const Home = ({ posts }) => {
         </div>
       </section> */}
 
-<section className="section pt-4" id="blog">
+      <section className="section pt-4" id="blog">
         <div className="container">
           <h2 className="mb-3 title header-title">
             Latest <span className="text-danger">Blogs</span>
@@ -539,7 +539,7 @@ const Home = ({ posts }) => {
           <div className="row">
             {posts.map((post) => {
               return (
-                <div className="blog-card" key={post.slug.current}>
+                <div className="blog-card w-100" key={post.slug.current}>
                   <div className="img-holder">
                     <img
                       // src="/imgs/blog1.jpg"
@@ -548,7 +548,9 @@ const Home = ({ posts }) => {
                     />
                   </div>
                   <div className="content-holder">
+                    <a href={"/blog/"+post.slug.current}>
                     <h6 className="title">{post.title}</h6>
+                    </a>
 
                     <p className="post-details">
                       <a href="#">by me</a>
@@ -560,11 +562,11 @@ const Home = ({ posts }) => {
                       </a>
                     </p>
 
-                    {/* <p>
-                  {post.body[0].children[0].text}
-                </p> */}
+                    <p>
+                      {post.body[0].children[0].text.substring(0, 100) + "..."}
+                    </p>
                     {/* alternative  */}
-                    <PortableText
+                    {/* <PortableText
                       // Pass in block content straight from Sanity.io
                       content={post.body}
                       // Optionally override marks, decorators, blocks, etc. in a flat
@@ -577,9 +579,9 @@ const Home = ({ posts }) => {
                           <li className="special-list-item">{children}</li>
                         ),
                       }}
-                    />
+                    /> */}
 
-                    <a href="#" className="read-more">
+                    <a href={"/blog/"+post.slug.current} className="read-more">
                       Read more <i className="ti-angle-double-right"></i>
                     </a>
                   </div>
@@ -709,8 +711,8 @@ const Home = ({ posts }) => {
 
       {/* <!-- Google tag (gtag.js) --> */}
       <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11103724885"></script>
-      
-      
+
+
       {/* <!-- Event snippet for Outbound click conversion page --> */}
 
     </>
@@ -721,7 +723,7 @@ export default Home;
 export async function getServerSideProps() {
   const client = myConfiguredSanityClient;
 
-  const query = `*[_type == "post"] | order(publishedAt desc)`;
+  const query = `*[_type == "post"][0..3] | order(publishedAt desc)`;
   const posts = await client.fetch(query);
 
   return {
