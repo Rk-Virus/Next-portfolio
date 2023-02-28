@@ -47,14 +47,14 @@ const Home = ({ posts }) => {
       <Header />
 
       <Navbar showProfile={true} />
-      
+
       <div className="container-fluid">
         <div id="about" className="row about-section">
           <div className="col-lg-4 about-card">
             <h3 className="font-weight-light header-title">Who am I ?</h3>
             <span className="line mb-5"></span>
             <h5 className="mb-3">
-              A Web Designer / Developer Located In Our Lovely Earth
+              A Web Developer & Chemistry Student Located In Our Lovely Earth
             </h5>
             <p className="mt-10">
               I work for the world to make it better, and in between I am
@@ -254,6 +254,16 @@ const Home = ({ posts }) => {
                       aria-valuemax="100"
                     ></div>
                   </div>
+                  <h6>NextJs</h6>
+                  <div className="progress mb-3">
+                    <div
+                      className="progress-bar bg-danger w3"
+                      role="progressbar"
+                      aria-valuenow="40"
+                      aria-valuemin="0"
+                      aria-valuemax="50"
+                    ></div>
+                  </div>
                   <h6>Python</h6>
                   <div className="progress mb-3">
                     <div
@@ -345,7 +355,7 @@ const Home = ({ posts }) => {
                   </div>
                 </div>
                 <div className="col-7 text-left py-3">
-                  <h1 className="text-danger font-weight-bold font40">50+</h1>
+                  <h1 className="text-danger font-weight-bold font40">5+</h1>
                   <p className="text-light mb-1">Project Finished</p>
                 </div>
               </div>
@@ -520,12 +530,73 @@ const Home = ({ posts }) => {
         </div>
       </section> */}
 
+<section className="section pt-4" id="blog">
+        <div className="container">
+          <h2 className="mb-3 title header-title">
+            Latest <span className="text-danger">Blogs</span>
+          </h2>
+
+          <div className="row">
+            {posts.map((post) => {
+              return (
+                <div className="blog-card" key={post.slug.current}>
+                  <div className="img-holder">
+                    <img
+                      // src="/imgs/blog1.jpg"
+                      src={urlFor(post.mainImage)}
+                      alt="content writing blog image"
+                    />
+                  </div>
+                  <div className="content-holder">
+                    <h6 className="title">{post.title}</h6>
+
+                    <p className="post-details">
+                      <a href="#">by me</a>
+                      <a href="#">
+                        <i className="ti-heart text-danger"></i> 2
+                      </a>
+                      <a href="#">
+                        <i className="ti-comment"></i> 1
+                      </a>
+                    </p>
+
+                    {/* <p>
+                  {post.body[0].children[0].text}
+                </p> */}
+                    {/* alternative  */}
+                    <PortableText
+                      // Pass in block content straight from Sanity.io
+                      content={post.body}
+                      // Optionally override marks, decorators, blocks, etc. in a flat
+                      // structure without doing any gymnastics
+                      serializers={{
+                        h1: (props) => (
+                          <h1 style={{ color: "red" }} {...props} />
+                        ),
+                        li: ({ children }) => (
+                          <li className="special-list-item">{children}</li>
+                        ),
+                      }}
+                    />
+
+                    <a href="#" className="read-more">
+                      Read more <i className="ti-angle-double-right"></i>
+                    </a>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+      <hr />
+
       <section className="section bg-dark py-5">
         <div className="container text-center">
           <h2 className="text-light mb-5 font-weight-normal">
             I am Available for Freelance
           </h2>
-          <button className="btn btn-primary w-lg">Hire me</button>
+          <button className="btn btn-primary w-lg"><a href="https://forms.gle/gFHydLJcn6zgxhWs5"> Hire me</a></button>
         </div>
       </section>
 
@@ -635,6 +706,13 @@ const Home = ({ posts }) => {
 
       {/* <!-- bootstrap 3 affix --> */}
       <Script src="/assets/vendors/bootstrap/bootstrap.affix.js"></Script>
+
+      {/* <!-- Google tag (gtag.js) --> */}
+      <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11103724885"></script>
+      
+      
+      {/* <!-- Event snippet for Outbound click conversion page --> */}
+
     </>
   );
 };

@@ -12,7 +12,7 @@ function Footer() {
             <a href="#" target="_blank">
               <span
                 className="text-danger"
-                title="Bootstrap 4 Themes and Dashboards"
+                title="I'm a Developer"
               >
                 RkVirus
               </span>
