@@ -49,9 +49,9 @@ function Blogs({ posts }) {
           </h2>
 
           <div className="row">
-            {posts.map((post) => {
+            {posts.length > 0 && posts.map((post) => {
               return (
-                <div className="blog-card" key={post.slug.current}>
+                <div className="blog-card" key={post._id}>
                   <div className="img-holder">
                     <img
                       // src="/imgs/blog1.jpg"

@@ -27,7 +27,7 @@ const ptComponents = {
 }
 
 
-const Post = ({ post }) => {
+const Post = ({ post ={}}) => {
     return (
         <>
             <Navbar />
