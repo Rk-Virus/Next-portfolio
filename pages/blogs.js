@@ -75,11 +75,11 @@ function Blogs({ posts }) {
                       </a>
                     </p>
 
-                    {/* <p>
-                  {post.body[0].children[0].text}
-                </p> */}
+                    <p>
+                    {post.body[0].children[0].text.substring(0, 100) + "..."}
+                </p>
                     {/* alternative  */}
-                    <PortableText
+                    {/* <PortableText
                       // Pass in block content straight from Sanity.io
                       content={post.body}
                       // Optionally override marks, decorators, blocks, etc. in a flat
@@ -92,7 +92,7 @@ function Blogs({ posts }) {
                           <li className="special-list-item">{children}</li>
                         ),
                       }}
-                    />
+                    /> */}
 
                     <a href={"/blog/"+post.slug.current} className="read-more">
                       Read more <i className="ti-angle-double-right"></i>
