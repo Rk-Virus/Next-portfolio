@@ -89,15 +89,7 @@ const Post = ({ post = {} }) => {
     )
 }
 
-const query = groq`*[_type == "post" && slug.current == $slug][0]{
-    title,
-    mainImage,
-    body,
-    "name": author->name,
-    "categories": categories[]->title,
-    "authorImage": author->image,
-    "authorBio": author -> bio
-  }`
+
 
 export async function getStaticPaths() {
     const paths = await client.fetch(
@@ -111,6 +103,15 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps(context) {
+    const query = groq`*[_type == "post" && slug.current == $slug][0]{
+        title,
+        mainImage,
+        body,
+        "name": author->name,
+        "categories": categories[]->title,
+        "authorImage": author->image,
+        "authorBio": author -> bio
+      }`
     // It's important to default the slug so that it doesn't return "undefined"
     const { slug = "" } = context.params
     const post = await client.fetch(query, { slug })

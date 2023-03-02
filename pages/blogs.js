@@ -1,3 +1,4 @@
+import groq from 'groq'
 import React from 'react'
 import Script from "next/script";
 import PortableText from "react-portable-text";
@@ -126,7 +127,7 @@ export default Blogs
 export async function getServerSideProps() {
   const client = myConfiguredSanityClient;
 
-  const query = `*[_type == "post"] | order(publishedAt desc)`;
+  const query = groq`*[_type == "post"] | order(publishedAt desc)`;
   const posts = await client.fetch(query);
 
   return {
