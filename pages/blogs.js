@@ -76,7 +76,7 @@ function Blogs({ posts }) {
                     </p>
 
                     <p>
-                    {post.body[0].children[0].text.substring(0, 100) + "..."}
+                    {post.body[0].children[0].text.substring(0, 100) + "..."} 
                 </p>
                     {/* alternative  */}
                     {/* <PortableText
