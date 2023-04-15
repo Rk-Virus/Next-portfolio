@@ -7,6 +7,7 @@ import myConfiguredSanityClient from "../client";
 //components
 import Navbar from "../components/Navbar";
 import SocialHandles from "../components/SocialHandles";
+import Link from 'next/link';
 
 // sanity image builder
 const builder = imageUrlBuilder(myConfiguredSanityClient);
@@ -66,7 +67,7 @@ function Blogs({ posts }) {
                     </a>
 
                     <p className="post-details">
-                      <a href="/blog/my-story">by me</a>
+                      <Link href="/blog/my-story"><a>by me</a></Link>
                       <a href="#">
                         <i className="ti-heart text-danger"></i> 2
                       </a>

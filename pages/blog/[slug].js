@@ -84,7 +84,7 @@ const Post = ({ post = {} }) => {
                         </div>
                     </div>
                 </div>
-                <div className="fb-like" data-href={"https://www.rkvirus.me/blog/" + post?.slug?.current} data-width="" data-layout="" data-action="" data-size="" data-share="true"></div>
+                <div className="fb-like" data-href={"https://www.rkvirus.me/blog/" + post?.slug?.current} data-width="" data-layout="" data-action="" data-size="" data-share="true" ></div>
             </section>
             <div className="fb-comments" data-href={"https://www.rkvirus.me/blog/" + post?.slug?.current} data-width="" data-numposts="4"></div>
         </>
