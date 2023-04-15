@@ -66,7 +66,7 @@ function Blogs({ posts }) {
                     </a>
 
                     <p className="post-details">
-                      <a href="#">by me</a>
+                      <a href="/blog/my-story">by me</a>
                       <a href="#">
                         <i className="ti-heart text-danger"></i> 2
                       </a>
