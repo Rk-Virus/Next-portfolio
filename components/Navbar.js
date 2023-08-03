@@ -71,6 +71,13 @@ function Navbar({showProfile}) {
                 </a>
                 </Link>
               </li>
+              <li className="nav-item">
+              <Link href="/#price">
+                <a className="nav-link">
+                  Pricing
+                </a>
+                </Link>
+              </li>
               <li className="nav-item last-item">
               <Link href="/#contact">
                 <a className="nav-link">

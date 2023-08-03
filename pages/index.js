@@ -127,8 +127,7 @@ const Home = ({ posts }) => {
               <div className="col-10 ml-auto mr-3">
                 <h6>Digital Marketing</h6>
                 <p className="subtitle">
-                  SEO, google console, keywords, listing, and all are point of
-                  concert for my projects
+                  SEO, google console, keywords, listing, and all...
                 </p>
                 <hr />
               </div>
@@ -141,7 +140,7 @@ const Home = ({ posts }) => {
       <section className="section" id="resume">
         <div className="container">
           <h2 className="mb-5 header-title">
-            <span className="text-danger">My</span> Resume
+            <span className="text-danger">More</span> About Me
           </h2>
           <div className="row">
             <div className="col-md-6 col-lg-4">
@@ -154,26 +153,24 @@ const Home = ({ posts }) => {
                 </div>
                 <div className="card-body">
                   <h6 className="title text-danger">2021 - Present</h6>
-                  <p>UX Developer</p>
+                  <p>Full Stack Developer</p>
                   <p className="subtitle">
-                    I work as a UX, enhancing interactivity with buttons,
-                    animations, and more fun with JavaScript on the web and
-                    apps.
+                    I work using MERN, MEAN, FARM, etc. stacks to develop blog, ecommerce, ed-tech and other full stack projects.
                   </p>
                   <hr />
                   <br />
                   <h6 className="title text-danger">2020 - 2021</h6>
-                  <p>Front-end Developer</p>
+                  <p>Front-End Developer</p>
                   <p className="subtitle">
                     Learned some HTML, CSS and JS to create some basic login
                     forms, landing pages, etc.
                   </p>
                   <hr />
                   <br />
-                  <h6 className="title text-danger">past - 2020</h6>
+                  <h6 className="title text-danger">Past - 2020</h6>
                   <p>Student</p>
                   <p className="subtitle">
-                    A science student, interested in Does it work? if it works
+                    A science student, interested in, Does it work? if it works
                     how it works? Still Learning chemistry as to persue my
                     research carrier in science.
                   </p>
@@ -189,11 +186,18 @@ const Home = ({ posts }) => {
                   </div>
                 </div>
                 <div className="card-body">
-                  <h6 className="title text-danger">2020 - Present</h6>
+                <h6 className="title text-danger">2023 - Present</h6>
+                  <p>MCA (Master of Computer Applications)</p>
+                  <p className="subtitle">
+                    Just persuing this to enhance my tech. skills. Just started...
+                  </p>
+                  <hr />
+                  <br />
+                  <h6 className="title text-danger">2020 - 2023</h6>
                   <p>B.Sc. (H) Chemisty</p>
                   <p className="subtitle">
                     I love chemisty! Although there are a lot of exceptions but
-                    there a reason behind every exception. In my words -
+                    there is a reason behind every exception. In my words -
                     &quot;Chemisty is the mystery of electrons.&quot;
                   </p>
                   <hr />
@@ -207,7 +211,7 @@ const Home = ({ posts }) => {
                   </p>
                   <hr />
                   <br />
-                  <h6 className="title text-danger">past - 2018</h6>
+                  <h6 className="title text-danger">Past - 2018</h6>
                   <p>Senior Secondry School</p>
                   <p className="subtitle">
                     Learnt general subjects like general science, social
@@ -225,7 +229,7 @@ const Home = ({ posts }) => {
                   </div>
                 </div>
                 <div className="card-body pb-2">
-                  <h6>HTML5 &amp; CSS3</h6>
+                  <h6>HTML5 &amp; CSS3 &amp; JS</h6>
                   <div className="progress mb-3">
                     <div
                       className="progress-bar bg-danger w1"
@@ -235,27 +239,18 @@ const Home = ({ posts }) => {
                       aria-valuemax="100"
                     ></div>
                   </div>
-                  <h6>JavaScript</h6>
-                  <div className="progress mb-3">
-                    <div
-                      className="progress-bar bg-danger w2"
-                      role="progressbar"
-                      aria-valuenow="25"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    ></div>
-                  </div>
-                  <h6>React</h6>
+                  
+                  <h6>React with Next.js</h6>
                   <div className="progress mb-3">
                     <div
                       className="progress-bar bg-danger w3"
                       role="progressbar"
-                      aria-valuenow="50"
+                      aria-valuenow="75"
                       aria-valuemin="0"
                       aria-valuemax="100"
                     ></div>
                   </div>
-                  <h6>NextJs</h6>
+                  <h6>Vue.js with Nuxt.js</h6>
                   <div className="progress mb-3">
                     <div
                       className="progress-bar bg-danger w3"
@@ -265,7 +260,7 @@ const Home = ({ posts }) => {
                       aria-valuemax="50"
                     ></div>
                   </div>
-                  <h6>Python</h6>
+                  <h6>Python with Django</h6>
                   <div className="progress mb-3">
                     <div
                       className="progress-bar bg-danger w4"
@@ -275,7 +270,7 @@ const Home = ({ posts }) => {
                       aria-valuemax="100"
                     ></div>
                   </div>
-                  <h6>C/C++</h6>
+                  <h6>C/C++ and Others</h6>
                   <div className="progress mb-3">
                     <div
                       className="progress-bar bg-danger w4"
@@ -295,7 +290,7 @@ const Home = ({ posts }) => {
                   </div>
                 </div>
                 <div className="card-body pb-2">
-                  <h6>Hindi</h6>
+                  <h6>English</h6>
                   <div className="progress mb-3">
                     <div
                       className="progress-bar bg-danger w2"
@@ -305,12 +300,22 @@ const Home = ({ posts }) => {
                       aria-valuemax="100"
                     ></div>
                   </div>
-                  <h6>English</h6>
+                  <h6>Hindi</h6>
                   <div className="progress mb-3">
                     <div
                       className="progress-bar bg-danger w6"
                       role="progressbar"
                       aria-valuenow="50"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                  <h6>Urdu</h6>
+                  <div className="progress mb-3">
+                    <div
+                      className="progress-bar bg-danger w6"
+                      role="progressbar"
+                      aria-valuenow="25"
                       aria-valuemin="0"
                       aria-valuemax="100"
                     ></div>
@@ -340,7 +345,7 @@ const Home = ({ posts }) => {
             <span className="text-danger">My</span> Services
           </h2>
           <div className="row">
-            <div className="col-md-4 col-sm-6">
+            <div className="col-md-3 col-sm-6">
               <div className="card mb-5">
                 <div className="card-header has-icon">
                   <i className="ti-vector text-danger" aria-hidden="true"></i>
@@ -356,7 +361,7 @@ const Home = ({ posts }) => {
                 </div>
               </div>
             </div>
-            <div className="col-md-4 col-sm-6">
+            <div className="col-md-3 col-sm-6">
               <div className="card mb-5">
                 <div className="card-header has-icon">
                   <i className="ti-write text-danger" aria-hidden="true"></i>
@@ -373,7 +378,7 @@ const Home = ({ posts }) => {
               </div>
             </div>
 
-            {/* <div className="col-md-4 col-sm-6">
+            {/* <div className="col-md-3 col-sm-6">
               <div className="card mb-5">
                 <div className="card-header has-icon">
                   <i className="ti-map-alt text-danger" aria-hidden="true"></i>
@@ -386,7 +391,7 @@ const Home = ({ posts }) => {
                 </div>
               </div>
             </div> */}
-            <div className="col-md-4 col-sm-6">
+            <div className="col-md-3 col-sm-6">
               <div className="card mb-5">
                 <div className="card-header has-icon">
                   <i
@@ -406,73 +411,122 @@ const Home = ({ posts }) => {
                 </div>
               </div>
             </div>
+
+            <div className="col-md-3 col-sm-6">
+              <div className="card mb-5">
+                <div className="card-header has-icon">
+                  <i
+                    className="ti-bar-chart text-danger"
+                    aria-hidden="true"
+                  ></i>
+                </div>
+                <div className="card-body px-4 py-3">
+                  <h5 className="mb-3 card-title text-dark">
+                    Tuition Teacher
+                  </h5>
+                  <p className="subtitle">
+                    I teach Maths, Chemistry, Physics and computer related subjects, clearing all concepts with best examples and real world problems.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
-      {/* 
+      
+      {/* pricing section  */}
       <section className="section bg-custom-gray" id="price">
         <div className="container">
-          <h1 className="mb-5 header-title">
+          <h1 className="mb-2 header-title">
             <span className="text-danger">Average</span> Pricing
           </h1>
           <div className="row align-items-center">
-            <div className="col-md-6 col-lg-3">
-              <div className="price-card text-center mb-4">
-                <h3 className="price-card-title">Advice</h3>
+            <div className="col-md-6 col-lg-4">
+              <div className="price-card text-left mb-4">
+                <h3 className="price-card-title">Basic Project</h3>
                 <div className="price-card-cost">
                   <sup className="ti-money"></sup>
-                  <span className="num">0</span>
-                  <span className="date">MO</span>
+                  <span className="num">150-200</span>
+                  <span className="date">1 MO</span>
                 </div>
                 <ul className="list">
                   <li className="list-item">
-                    Any <span className="text-muted">Project</span>
+                    Example: <span className="text-muted">Portfolio or Blog</span>
                   </li>
                   <li className="list-item">
-                    Any <span className="text-muted">Question</span>
+                    Includes: <span className="text-muted">Frontend, Admin Page</span>
                   </li>
                   <li className="list-item">
-                    Any <span className="text-muted">User</span>
+                    Tech-Stack: <span className="text-muted">Next.js, any CMS (Strapi or Sanity.io)</span>
                   </li>
                 </ul>
                 <a href="#contact">
                   <button className="btn btn-primary btn-rounded w-lg">
-                    Ask Now
+                    Contact Now
+                  </button>
+                </a>
+              </div>
+            </div>
+
+            <div className="col-md-6 col-lg-4">
+              <div className="price-card text-left mb-4">
+                <h3 className="price-card-title">Dynamic Project</h3>
+                <div className="price-card-cost">
+                  <sup className="ti-money"></sup>
+                  <span className="num">250-300</span>
+                  <span className="date">2 MO</span>
+                </div>
+                <ul className="list">
+                  <li className="list-item">
+                    Example: <span className="text-muted">E-Commerce or Ed-Tech</span>
+                  </li>
+                  <li className="list-item">
+                    Includes: <span className="text-muted">Basic + Authentication and Database</span>
+                  </li>
+                  <li className="list-item">
+                    Tech-Stack: <span className="text-muted">MERN or FARM</span>
+                  </li>
+                </ul>
+                <a href="#contact">
+                  <button className="btn btn-primary btn-rounded w-lg">
+                    Contact Now
                   </button>
                 </a>
               </div>
             </div>
             
-            <div className="col-md-6 col-lg-3">
+            <div className="col-md-6 col-lg-4">
               <div className="price-card text-center price-card-requried mb-4">
                 <h3 className="price-card-title">Exclusive</h3>
                 <div className="price-card-cost">
                   <sup className="ti-money"></sup>
-                  <span className="num">25</span>
-                  <span className="date">MO</span>
+                  <span className="num">400</span>
+                  <span className="date">2 MO</span>
                 </div>
                 <ul className="list">
                   <li className="list-item">
-                    150 <span className="text-muted">Project</span>
+                    Any <span className="text-muted">Full Stack Project</span>
                   </li>
                   <li className="list-item">
                   </li>
                   <li className="list-item">
-                    5<span className="text-muted"> Domain</span>
+                    Includes: <span className="text-muted"> All above + Deployement</span>
                   </li>
                   <li className="list-item">
-                    15<span className="text-muted">User</span>
+                    Any Stack:<span className="text-muted">MERN, MEAN or FARM + Paid Hoisting and Domain</span>
                   </li>
                 </ul>
+                <a href="#contact">
                 <button className="btn btn-primary btn-rounded w-lg">
-                  Subscribe
+                  Contact
                 </button>
+                </a>
               </div>
             </div>
             
           </div>
         </div>
-      </section> */}
+      </section>
 
       <section className="section pt-4" id="blog">
         <div className="container">
