@@ -13,7 +13,7 @@ function Header() {
             <h1 className="header-title">Rk Virus</h1>
             <h6 className="header-mono">An Unofficial Developer</h6>
             <button className="btn btn-primary btn-rounded">
-              <Link href="https://github.com/Rk-Virus">
+              <Link href="https://github.com/Rk-Virus" className='text-white'>
                 <div>
                   <i className="ti-new-window pr-2"></i>Visit my GitHub Profile
                 </div>

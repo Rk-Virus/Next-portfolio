@@ -4,7 +4,6 @@ import "../public/assets/vendors/themify-icons/css/themify-icons.css";
 
 //components
 import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
 
 
 function MyApp({ Component, pageProps }) {

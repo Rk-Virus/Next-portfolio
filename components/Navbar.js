@@ -26,24 +26,24 @@ function Navbar({showProfile}) {
           >
             <ul className="navbar-nav mr-auto">
               <li className="nav-item">
-                <Link href="/">
-                <a className="nav-link">
+                <Link href="/" className='nav-link'>
+                
                   Home
-                </a>
+                
                 </Link>
               </li>
               <li className="nav-item">
-              <Link href="/#about">
-                <a className="nav-link">
+              <Link href="/#about" className='nav-link'>
+                
                   About
-                </a>
+                
                 </Link>
               </li>
               <li className="nav-item">
-              <Link href="/#resume">
-                <a className="nav-link">
+              <Link href="/#resume" className='nav-link'>
+                
                   Resume
-                </a>
+                
                 </Link>
               </li>
             </ul>
@@ -58,31 +58,31 @@ function Navbar({showProfile}) {
             )}
             <ul className="navbar-nav ml-auto">
               <li className="nav-item">
-              <Link href="/#portfolio">
-                <a className="nav-link">
+              <Link href="/#portfolio" className='nav-link'>
+                
                   Portfolio
-                </a>
+                
                 </Link>
               </li>
               <li className="nav-item">
-              <Link href="/blogs">
-                <a className="nav-link">
+              <Link href="/blogs" className='nav-link'>
+                
                   Blogs
-                </a>
+                
                 </Link>
               </li>
               <li className="nav-item">
-              <Link href="/#price">
-                <a className="nav-link">
+              <Link href="/#price" className='nav-link'>
+                
                   Pricing
-                </a>
+                
                 </Link>
               </li>
               <li className="nav-item last-item">
-              <Link href="/#contact">
-                <a className="nav-link">
+              <Link href="/#contact" className='nav-link'>
+                
                   Contact
-                </a>
+                
                 </Link>
               </li>
             </ul>
