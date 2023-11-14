@@ -24,7 +24,6 @@ function MyApp({ Component, pageProps }) {
         <link rel="icon" href="/favicon128.png" />
       </Head>
       <Component {...pageProps} />
-      {/* <!-- JavaScript Bundle with Popper --> */}
       <Footer />
     </>
   );

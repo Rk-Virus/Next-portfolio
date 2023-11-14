@@ -3,8 +3,7 @@ import React from 'react'
 function Portfolio() {
   return (
     <>
-        
-<section className="section bg-custom-gray" id="portfolio">
+      <section className="section bg-custom-gray" id="portfolio">
         <div className="container header-title">
           <h1 className="mb-5">
             <span className="text-danger">My</span> Portfolio

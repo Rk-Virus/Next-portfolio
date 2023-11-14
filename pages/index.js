@@ -370,19 +370,6 @@ const Home = ({ posts }) => {
               </div>
             </div>
 
-            {/* <div className="col-md-3 col-sm-6">
-              <div className="card mb-5">
-                <div className="card-header has-icon">
-                  <i className="ti-map-alt text-danger" aria-hidden="true"></i>
-                </div>
-                <div className="card-body px-4 py-3">
-                  <h5 className="mb-3 card-title text-dark">Mentor</h5>
-                  <p className="subtitle">
-                    I can guide you if are lost in life, if you think me as a good example. From studies to having fun in life. It's my free time while telling people - why am I persuing Chemisty Hons degree?
-                  </p>
-                </div>
-              </div>
-            </div> */}
             <div className="col-md-3 col-sm-6">
               <div className="card mb-5">
                 <div className="card-header has-icon">
@@ -441,14 +428,14 @@ const Home = ({ posts }) => {
             <div className="xl:w-full md:w-1/2">
               <div className="bg-gray-100 p-6 rounded-lg">
                 <Link href={"https://www.ekonopro.com/"}>
-                <img className="h-80 rounded w-full object-cover object-center mb-6" src="/imgs/ekonopro.png" alt="content" /></Link>
+                  <img className="h-80 rounded w-full object-cover object-center mb-6" src="/imgs/ekonopro.png" alt="content" /></Link>
                 <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font">NEXT+Sanity</h3>
                 <h2 className="text-lg text-gray-900 font-medium title-font mb-4">Ekonopro.com</h2>
                 <p className="leading-relaxed text-base">Discover economics effortlessly with our Next.js and Sanity.io-powered learning site. Engage in interactive lessons, real-world case studies, and seamless navigation for a dynamic educational experience. Elevate your understanding of economic principles with us!</p>
                 <h6> <Link href={"https://github.com/trg-projects/Economics-Site"}> Checkout GitHub Repo </Link> </h6>
               </div>
             </div>
-            
+
           </div>
         </div>
       </section>
@@ -655,8 +642,6 @@ const Home = ({ posts }) => {
         integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
         crossOrigin="anonymous"
       ></Script>
-      {/* <!-- core  --> */}
-      <Script src="/assets/vendors/jquery/jquery-3.4.1.js"></Script>
 
       <Script src="/assets/vendors/bootstrap/bootstrap.bundle.js"></Script>
 
@@ -666,8 +651,6 @@ const Home = ({ posts }) => {
       {/* <!-- Google tag (gtag.js) --> */}
       <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11103724885"></script>
 
-
-      {/* <!-- Event snippet for Outbound click conversion page --> */}
 
     </>
   );
