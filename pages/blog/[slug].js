@@ -36,7 +36,7 @@ const Post = ({ post = {} }) => {
                 </article> */}
             <section className="text-gray-600 body-font">
                 <div className="container px-5 py-14 mx-auto flex flex-col">
-                    <div className="lg:w-4/6 mx-auto">
+                    <div className="lg:w-5/6 mx-auto">
                         {/* title  */}
                         <div className="sm:text-3xl text-2xl title-font font-medium text-gray-900 mb-2">{post.title}</div>
                         {post.mainImage && (
@@ -52,7 +52,7 @@ const Post = ({ post = {} }) => {
                         )}
                         <div className="flex flex-col sm:flex-row mt-10">
                             {post.authorImage && (
-                                <div className="sm:w-1/3 text-center sm:pr-8 sm:py-8">
+                                <div className="sm:w-1/4 text-center sm:pr-8 sm:py-8">
                                     <div className="w-20 h-20 rounded-full inline-flex items-center justify-center bg-gray-200 text-gray-400">
                                         <img
                                             alt="author image"
@@ -73,7 +73,7 @@ const Post = ({ post = {} }) => {
                                     </div>
                                 </div>
                             )}
-                            <div className="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-start sm:text-left">
+                            <div className="sm:w-3/4 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-start sm:text-left">
                                 <div className="leading-relaxed text-lg mb-4">
                                     <PortableText
                                         value={post.body}
@@ -84,9 +84,7 @@ const Post = ({ post = {} }) => {
                         </div>
                     </div>
                 </div>
-                <div className="fb-like" data-href={"https://www.rkvirus.me/blog/" + post?.slug?.current} data-width="" data-layout="" data-action="" data-size="" data-share="true" ></div>
             </section>
-            <div className="fb-comments" data-href={"https://www.rkvirus.me/blog/" + post?.slug?.current} data-width="" data-numposts="4"></div>
         </>
     )
 }

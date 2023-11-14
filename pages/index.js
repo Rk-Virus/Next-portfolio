@@ -8,7 +8,6 @@ import myConfiguredSanityClient from "../client";
 import Navbar from "../components/Navbar";
 import Header from "../components/Header";
 import SocialHandles from "../components/SocialHandles";
-import Portfolio from "../components/Portfolio";
 import Counter from "../components/Counter";
 
 // sanity image builder
@@ -270,7 +269,7 @@ const Home = ({ posts }) => {
                       aria-valuemax="100"
                     ></div>
                   </div>
-                  <h6>C/C++ and Others</h6>
+                  <h6>Node with Nest.js</h6>
                   <div className="progress mb-3">
                     <div
                       className="progress-bar bg-danger w4"
@@ -378,19 +377,6 @@ const Home = ({ posts }) => {
               </div>
             </div>
 
-            {/* <div className="col-md-3 col-sm-6">
-              <div className="card mb-5">
-                <div className="card-header has-icon">
-                  <i className="ti-map-alt text-danger" aria-hidden="true"></i>
-                </div>
-                <div className="card-body px-4 py-3">
-                  <h5 className="mb-3 card-title text-dark">Mentor</h5>
-                  <p className="subtitle">
-                    I can guide you if are lost in life, if you think me as a good example. From studies to having fun in life. It's my free time while telling people - why am I persuing Chemisty Hons degree?
-                  </p>
-                </div>
-              </div>
-            </div> */}
             <div className="col-md-3 col-sm-6">
               <div className="card mb-5">
                 <div className="card-header has-icon">
@@ -433,6 +419,34 @@ const Home = ({ posts }) => {
           </div>
         </div>
       </section>
+
+      {/* project section  */}
+      <section className="text-gray-600 body-font">
+        <div className="container px-5  mx-auto">
+          <div className="flex flex-wrap w-full mb-20">
+            <div className="lg:w-1/4 w-full mb-6 lg:mb-0">
+              <h1 className="sm:text-4xl text-3xl font-medium title-font mb-2 text-gray-900">Projects</h1>
+              <div className="h-1 w-20 bg-red-400 rounded"></div>
+            </div>
+            <p className="lg:w-3/4 w-full leading-relaxed text-gray-500">Embark on a global digital journey with our streamlined projects, blending React.js, Next.js, Django, React Native, and Sanity. From redefining user experiences to optimizing content management, we prioritize innovation, security, and global collaboration for an elevated digital presence. Contact us for efficient and impactful solutions.</p>
+          </div>
+
+          <div className="flex flex-wrap -m-4">
+            <div className="xl:w-full md:w-1/2">
+              <div className="bg-gray-100 p-6 rounded-lg">
+                <Link href={"https://www.ekonopro.com/"}>
+                  <img className="h-80 rounded w-full object-cover object-center mb-6" src="/imgs/ekonopro.png" alt="content" /></Link>
+                <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font">NEXT+Sanity</h3>
+                <h2 className="text-lg text-gray-900 font-medium title-font mb-4">Ekonopro.com</h2>
+                <p className="leading-relaxed text-base">Discover economics effortlessly with our Next.js and Sanity.io-powered learning site. Engage in interactive lessons, real-world case studies, and seamless navigation for a dynamic educational experience. Elevate your understanding of economic principles with us!</p>
+                <h6> <Link href={"https://github.com/trg-projects/Economics-Site"}> Checkout GitHub Repo </Link> </h6>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
       
       {/* pricing section  */}
       <section className="section bg-custom-gray" id="price">
@@ -536,9 +550,6 @@ const Home = ({ posts }) => {
           <button className="btn btn-primary w-lg"><a href="https://forms.gle/gFHydLJcn6zgxhWs5"> Hire me</a></button>
         </div>
       </section>
-
-      {/* <!-- Portfolio Section --> */}
-      {/* <Portfolio /> */}
 
       <section className="section" id="contact">
         <div className="container">
