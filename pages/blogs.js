@@ -6,6 +6,7 @@ import imageUrlBuilder from "@sanity/image-url";
 import myConfiguredSanityClient from "../client";
 //components
 import Navbar from "../components/Navbar";
+import SocialHandles from "../components/SocialHandles";
 import Link from 'next/link';
 
 // sanity image builder
@@ -65,7 +66,7 @@ function Blogs({ posts }) {
                     <h6 className="title">{post.title}</h6>
                     </a>
 
-                    {/* <p className="post-details">
+                    <p className="post-details">
                       <Link href="/blog/my-story"><a>by me</a></Link>
                       <a href="#">
                         <i className="ti-heart text-danger"></i> 2
@@ -73,7 +74,7 @@ function Blogs({ posts }) {
                       <a href="#">
                         <i className="ti-comment"></i> 1
                       </a>
-                    </p> */}
+                    </p>
 
                     <p>
                     {post.body[0].children[0].text.substring(0, 100) + "..."} 

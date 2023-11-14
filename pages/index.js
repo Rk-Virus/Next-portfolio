@@ -11,7 +11,6 @@ import SocialHandles from "../components/SocialHandles";
 import Portfolio from "../components/Portfolio";
 import Counter from "../components/Counter";
 
-
 // sanity image builder
 const builder = imageUrlBuilder(myConfiguredSanityClient);
 function urlFor(source) {
@@ -63,9 +62,11 @@ const Home = ({ posts }) => {
               getting better. Download my Resume to know my current version...
             </p>
             <button className="btn btn-outline-danger">
-              <a target="_blank" href="/my-resume.pdf" rel="noopener noreferrer" style={{ color: "black" }} >
-                Download My Resume
-              </a>
+              <Link href="/my-resume.pdf" scroll={false}>
+                <a target="_blank">
+                  <i className="icon-down-circled2"></i>Download My Resume
+                </a>
+              </Link>
             </button>
           </div>
           <div className="col-lg-4 about-card">
@@ -185,7 +186,7 @@ const Home = ({ posts }) => {
                   </div>
                 </div>
                 <div className="card-body">
-                  <h6 className="title text-danger">2023 - Present</h6>
+                <h6 className="title text-danger">2023 - Present</h6>
                   <p>MCA (Master of Computer Applications)</p>
                   <p className="subtitle">
                     Just persuing this to enhance my tech. skills. Just started...
@@ -201,14 +202,21 @@ const Home = ({ posts }) => {
                   </p>
                   <hr />
                   <br />
-                  <h6 className="title text-danger">Past - 2020</h6>
+                  <h6 className="title text-danger">2018 - 2020</h6>
                   <p>Science Student</p>
                   <p className="subtitle">
                     I learnt science i.e. chemistry, physics and mathmatics. I
                     performed experiments, derived equations and still applying
                     the theories and logic in real life.
                   </p>
-
+                  <hr />
+                  <br />
+                  <h6 className="title text-danger">Past - 2018</h6>
+                  <p>Senior Secondry School</p>
+                  <p className="subtitle">
+                    Learnt general subjects like general science, social
+                    science, etc. and participated in many competitions.
+                  </p>
                 </div>
               </div>
             </div>
@@ -231,7 +239,7 @@ const Home = ({ posts }) => {
                       aria-valuemax="100"
                     ></div>
                   </div>
-
+                  
                   <h6>React with Next.js</h6>
                   <div className="progress mb-3">
                     <div
@@ -329,7 +337,7 @@ const Home = ({ posts }) => {
         </div>
       </section>
 
-      {/* <Counter/> */}
+{/* <Counter/> */}
 
       <section className="section" id="service">
         <div className="container">
@@ -370,6 +378,19 @@ const Home = ({ posts }) => {
               </div>
             </div>
 
+            {/* <div className="col-md-3 col-sm-6">
+              <div className="card mb-5">
+                <div className="card-header has-icon">
+                  <i className="ti-map-alt text-danger" aria-hidden="true"></i>
+                </div>
+                <div className="card-body px-4 py-3">
+                  <h5 className="mb-3 card-title text-dark">Mentor</h5>
+                  <p className="subtitle">
+                    I can guide you if are lost in life, if you think me as a good example. From studies to having fun in life. It's my free time while telling people - why am I persuing Chemisty Hons degree?
+                  </p>
+                </div>
+              </div>
+            </div> */}
             <div className="col-md-3 col-sm-6">
               <div className="card mb-5">
                 <div className="card-header has-icon">
@@ -412,34 +433,7 @@ const Home = ({ posts }) => {
           </div>
         </div>
       </section>
-
-      {/* project section  */}
-      <section className="text-gray-600 body-font">
-        <div className="container px-5 py-24 mx-auto">
-          <div className="flex flex-wrap w-full mb-20">
-            <div className="lg:w-1/4 w-full mb-6 lg:mb-0">
-              <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Projects</h1>
-              <div className="h-1 w-20 bg-indigo-500 rounded"></div>
-            </div>
-            <p className="lg:w-3/4 w-full leading-relaxed text-gray-500">Embark on a global digital journey with our streamlined projects, blending React.js, Next.js, Django, React Native, and Sanity. From redefining user experiences to optimizing content management, we prioritize innovation, security, and global collaboration for an elevated digital presence. Contact us for efficient and impactful solutions.</p>
-          </div>
-
-          <div className="flex flex-wrap -m-4">
-            <div className="xl:w-full md:w-1/2">
-              <div className="bg-gray-100 p-6 rounded-lg">
-                <Link href={"https://www.ekonopro.com/"}>
-                  <img className="h-80 rounded w-full object-cover object-center mb-6" src="/imgs/ekonopro.png" alt="content" /></Link>
-                <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font">NEXT+Sanity</h3>
-                <h2 className="text-lg text-gray-900 font-medium title-font mb-4">Ekonopro.com</h2>
-                <p className="leading-relaxed text-base">Discover economics effortlessly with our Next.js and Sanity.io-powered learning site. Engage in interactive lessons, real-world case studies, and seamless navigation for a dynamic educational experience. Elevate your understanding of economic principles with us!</p>
-                <h6> <Link href={"https://github.com/trg-projects/Economics-Site"}> Checkout GitHub Repo </Link> </h6>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </section>
-
+      
       {/* pricing section  */}
       <section className="section bg-custom-gray" id="price">
         <div className="container">
@@ -500,7 +494,7 @@ const Home = ({ posts }) => {
                 </a>
               </div>
             </div>
-
+            
             <div className="col-md-6 col-lg-4">
               <div className="price-card text-center price-card-requried mb-4">
                 <h3 className="price-card-title">Exclusive</h3>
@@ -523,13 +517,13 @@ const Home = ({ posts }) => {
                   </li>
                 </ul>
                 <a href="#contact">
-                  <button className="btn btn-primary btn-rounded w-lg">
-                    Contact
-                  </button>
+                <button className="btn btn-primary btn-rounded w-lg">
+                  Contact
+                </button>
                 </a>
               </div>
             </div>
-
+            
           </div>
         </div>
       </section>
@@ -539,7 +533,7 @@ const Home = ({ posts }) => {
           <h2 className="text-light mb-5 font-weight-normal">
             I am Available for Freelance
           </h2>
-          <button className="btn btn-primary w-lg "><a href="https://forms.gle/gFHydLJcn6zgxhWs5" className="text-white"> Hire me</a></button>
+          <button className="btn btn-primary w-lg"><a href="https://forms.gle/gFHydLJcn6zgxhWs5"> Hire me</a></button>
         </div>
       </section>
 
@@ -551,7 +545,7 @@ const Home = ({ posts }) => {
           <div className="row">
             <div className="col-lg-8">
               <div className="contact-form-card">
-                <h4 className="contact-title">Send a message</h4>
+                <h4 className="contact-title">Send a good message</h4>
 
                 <form action="https://formspree.io/f/xayzeprr" method="post">
                   <div className="form-group">
@@ -642,6 +636,8 @@ const Home = ({ posts }) => {
         integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
         crossOrigin="anonymous"
       ></Script>
+      {/* <!-- core  --> */}
+      <Script src="/assets/vendors/jquery/jquery-3.4.1.js"></Script>
 
       <Script src="/assets/vendors/bootstrap/bootstrap.bundle.js"></Script>
 
@@ -651,6 +647,8 @@ const Home = ({ posts }) => {
       {/* <!-- Google tag (gtag.js) --> */}
       <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11103724885"></script>
 
+
+      {/* <!-- Event snippet for Outbound click conversion page --> */}
 
     </>
   );

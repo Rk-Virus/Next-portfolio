@@ -50,9 +50,9 @@ const Post = ({ post = {} }) => {
                                 />
                             </div>
                         )}
-                        <div className="flex flex-col sm:flex-row mt-8">
+                        <div className="flex flex-col sm:flex-row mt-10">
                             {post.authorImage && (
-                                <div className="sm:w-1/5 text-center sm:pr-8 sm:py-8">
+                                <div className="sm:w-1/3 text-center sm:pr-8 sm:py-8">
                                     <div className="w-20 h-20 rounded-full inline-flex items-center justify-center bg-gray-200 text-gray-400">
                                         <img
                                             alt="author image"
@@ -84,7 +84,9 @@ const Post = ({ post = {} }) => {
                         </div>
                     </div>
                 </div>
+                <div className="fb-like" data-href={"https://www.rkvirus.me/blog/" + post?.slug?.current} data-width="" data-layout="" data-action="" data-size="" data-share="true" ></div>
             </section>
+            <div className="fb-comments" data-href={"https://www.rkvirus.me/blog/" + post?.slug?.current} data-width="" data-numposts="4"></div>
         </>
     )
 }
