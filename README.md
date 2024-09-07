@@ -20,7 +20,7 @@ The `pages/api` directory is mapped to `/api/*`. Files in this directory are tre
 
 ## Sanity Studio
 
-Login to rkvirus.sanity.studio to access the sanity studio dashboard!
+Github login to rkvirus.sanity.studio to access the sanity studio dashboard!
 
 ## Learn More
 
