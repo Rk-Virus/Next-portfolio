@@ -51,7 +51,7 @@ const Post = ({ post = {} }) => {
                             </div>
                         )}
                         <div className="flex flex-col sm:flex-row mt-10">
-                            {post.authorImage && (
+                            {/* {post.authorImage && (
                                 <div className="sm:w-1/4 text-center sm:pr-8 sm:py-8">
                                     <div className="w-20 h-20 rounded-full inline-flex items-center justify-center bg-gray-200 text-gray-400">
                                         <img
@@ -72,8 +72,8 @@ const Post = ({ post = {} }) => {
                                         </div>
                                     </div>
                                 </div>
-                            )}
-                            <div className="sm:w-3/4 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-start sm:text-left">
+                            )} */}
+                            <div className="sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-start sm:text-left">
                                 <div className="leading-relaxed text-lg mb-4">
                                     <PortableText
                                         value={post.body}

@@ -4,7 +4,7 @@ import Link from 'next/link'
 function Navbar({showProfile}) {
   return (
     <nav
-        className="navbar sticky-top navbar-expand-lg navbar-light bg-white"
+        className="navbar sticky-top navbar-expand-lg navbar-light bg-white py-4"
         data-spy="affix"
         data-offset-top="510"
       >
@@ -39,10 +39,18 @@ function Navbar({showProfile}) {
                 </a>
                 </Link>
               </li>
-              <li className="nav-item">
+              {/* <li className="nav-item">
               <Link href="/#resume">
                 <a className="nav-link">
                   Resume
+                </a>
+                </Link>
+              </li> */}
+
+              <li className="nav-item">
+              <Link href="/blogs">
+                <a className="nav-link">
+                  Blogs
                 </a>
                 </Link>
               </li>
@@ -57,20 +65,15 @@ function Navbar({showProfile}) {
             </ul>
             )}
             <ul className="navbar-nav ml-auto">
-              <li className="nav-item">
-              <Link href="/#portfolio">
+              
+            <li className="nav-item">
+              <Link href="/#projects">
                 <a className="nav-link">
-                  Portfolio
+                  Projects
                 </a>
                 </Link>
               </li>
-              <li className="nav-item">
-              <Link href="/blogs">
-                <a className="nav-link">
-                  Blogs
-                </a>
-                </Link>
-              </li>
+              
               <li className="nav-item">
               <Link href="/#price">
                 <a className="nav-link">

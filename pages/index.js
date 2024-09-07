@@ -60,13 +60,14 @@ const Home = ({ posts }) => {
               I work for the world to make it better, and in between I am
               getting better. Download my Resume to know my current version...
             </p>
-            <button className="btn btn-outline-danger">
+            {/* <button className="btn btn-outline-danger">
               <Link href="/my-resume.pdf" scroll={false}>
                 <a target="_blank">
                   <i className="icon-down-circled2"></i>Download My Resume
                 </a>
               </Link>
-            </button>
+            </button> */}
+            <h4>[Adding soon...]</h4>
           </div>
           <div className="col-lg-4 about-card">
             <h3 className="font-weight-light header-title">Personal Info</h3>
@@ -75,21 +76,21 @@ const Home = ({ posts }) => {
               <li>
                 <span>Birthdate</span> : 10/03/2003
               </li>
-              <li>
+              {/* <li>
                 <span>Email</span> : Ravim70655@gmail.com
               </li>
               <li>
                 <span>Phone</span> : +91 9625686379
-              </li>
-              <li>
+              </li> */}
+              {/* <li>
                 <span>Real Name</span> : Ravi Mishra{" "}
-              </li>
+              </li> */}
               <li>
-                <span>Address</span> : Uttam Nagar, New Delhi, India
+                <span>Address</span> : India
               </li>
             </ul>
 
-            <SocialHandles />
+            {/* <SocialHandles /> */}
           </div>
           <div className="col-lg-4 about-card">
             <h3 className="font-weight-light header-title">My Expertise</h3>
@@ -421,25 +422,37 @@ const Home = ({ posts }) => {
       </section>
 
       {/* project section  */}
-      <section className="text-gray-600 body-font">
+      <section className="text-gray-600 body-font" id="projects">
         <div className="container px-5  mx-auto">
-          <div className="flex flex-wrap w-full mb-20">
+          <div className="flex flex-wrap w-full mb-10">
             <div className="lg:w-1/4 w-full mb-6 lg:mb-0">
               <h1 className="sm:text-4xl text-3xl font-medium title-font mb-2 text-gray-900">Projects</h1>
               <div className="h-1 w-20 bg-red-400 rounded"></div>
             </div>
-            <p className="lg:w-3/4 w-full leading-relaxed text-gray-500">Embark on a global digital journey with our streamlined projects, blending React.js, Next.js, Django, React Native, and Sanity. From redefining user experiences to optimizing content management, we prioritize innovation, security, and global collaboration for an elevated digital presence. Contact us for efficient and impactful solutions.</p>
+            <p className="lg:w-3/4 w-full leading-relaxed text-black-500 blockquote">Embark on a global digital journey with our streamlined projects, blending React.js, Next.js, Django, React Native, and Sanity. From redefining user experiences to optimizing content management, we prioritize innovation, security, and global collaboration for an elevated digital presence. Contact us for efficient and impactful solutions.</p>
           </div>
 
-          <div className="flex flex-wrap -m-4">
+          <div className="flex flex-wrap m-4">
             <div className="xl:w-full md:w-1/2">
               <div className="bg-gray-100 p-6 rounded-lg">
                 <Link href={"https://www.ekonopro.com/"}>
                   <img className="h-80 rounded w-full object-cover object-center mb-6" src="/imgs/ekonopro.png" alt="content" /></Link>
                 <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font">NEXT+Sanity</h3>
-                <h2 className="text-lg text-gray-900 font-medium title-font mb-4">Ekonopro.com</h2>
+                <h2 className="text-lg text-gray-900 font-medium title-font mb-2">Ekonopro.com</h2>
                 <p className="leading-relaxed text-base">Discover economics effortlessly with our Next.js and Sanity.io-powered learning site. Engage in interactive lessons, real-world case studies, and seamless navigation for a dynamic educational experience. Elevate your understanding of economic principles with us!</p>
-                <h6> <Link href={"https://github.com/trg-projects/Economics-Site"}> Checkout GitHub Repo </Link> </h6>
+                {/* <h6> <Link href={"https://github.com/trg-projects/Economics-Site"}> Checkout GitHub Repo </Link> </h6> */}
+              </div>
+            </div>
+
+
+            <div className="xl:w-full md:w-1/2 mt-4">
+              <div className="bg-gray-200 p-6 rounded-lg">
+                <Link href={"https://aksar.org.in/"}>
+                  <img className="h-80 rounded w-full object-cover object-center mb-6" src="/imgs/Aksar.png" alt="content" /></Link>
+                <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font">Django Project</h3>
+                <h2 className="text-lg text-gray-900 font-medium title-font mb-2">Aksar.org.in</h2>
+                <p className="leading-relaxed text-base">Aksar is counselling plateform to provide you aid from minute issues to serious health problems.</p>
+                {/* <h6> <Link href={"https://github.com/trg-projects/Economics-Site"}> Checkout GitHub Repo </Link> </h6> */}
               </div>
             </div>
 
@@ -554,9 +567,10 @@ const Home = ({ posts }) => {
       <section className="section" id="contact">
         <div className="container">
           <div className="row">
+            <div className="col-lg-2"></div>
             <div className="col-lg-8">
               <div className="contact-form-card">
-                <h4 className="contact-title">Send a good message</h4>
+                <h4 className="contact-title">Have a feedback?</h4>
 
                 <form action="https://formspree.io/f/xayzeprr" method="post">
                   <div className="form-group">
@@ -597,7 +611,8 @@ const Home = ({ posts }) => {
                 </form>
               </div>
             </div>
-            <div className="col-lg-4">
+            
+            {/* <div className="col-lg-4">
               <div className="contact-info-card">
                 <h4 className="contact-title">Get in touch</h4>
                 <div className="row mb-2">
@@ -618,7 +633,7 @@ const Home = ({ posts }) => {
                   <div className="col-10">
                     <h6 className="d-inline">
                       Address :<br />{" "}
-                      <span className="text-muted">Uttam Nagar, New Delhi</span>
+                      <span className="text-muted">India</span>
                     </h6>
                   </div>
                 </div>
@@ -633,10 +648,10 @@ const Home = ({ posts }) => {
                     </h6>
                   </div>
                 </div>
-
-                <SocialHandles />
+                <SocialHandles /> 
               </div>
-            </div>
+            </div> */}
+            
           </div>
         </div>
       </section>
