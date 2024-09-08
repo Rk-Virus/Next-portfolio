@@ -91,18 +91,43 @@ const Post = ({ post = {} }) => {
 
 
 
-export async function getStaticPaths() {
-    const paths = await client.fetch(
-        `*[_type == "post" && defined(slug.current)][].slug.current`
-    )
+// export async function getStaticPaths() {
+//     const paths = await client.fetch(
+//         `*[_type == "post" && defined(slug.current)][].slug.current`
+//     )
 
-    return {
-        paths: paths.map((slug) => ({ params: { slug } })),
-        fallback: true,
-    }
-}
+//     return {
+//         paths: paths.map((slug) => ({ params: { slug } })),
+//         fallback: true,
+//     }
+// }
 
-export async function getStaticProps(context) {
+// export async function getStaticProps(context) {
+//     const query = groq`*[_type == "post" && slug.current == $slug][0]{
+//         title,
+//         mainImage,
+//         body,
+//         "name": author->name,
+//         "categories": categories[]->title,
+//         "authorImage": author->image,
+//         "authorBio": author -> bio
+//       }`
+//     // It's important to default the slug so that it doesn't return "undefined"
+//     const { slug = "" } = context.params
+//     const post = await client.fetch(query, { slug })
+
+//     return {
+//         props: {
+//             post
+//         }
+//     }
+// }
+
+// export default Post
+
+export async function getServerSideProps(context) {
+    const { slug } = context.params
+
     const query = groq`*[_type == "post" && slug.current == $slug][0]{
         title,
         mainImage,
@@ -110,15 +135,14 @@ export async function getStaticProps(context) {
         "name": author->name,
         "categories": categories[]->title,
         "authorImage": author->image,
-        "authorBio": author -> bio
+        "authorBio": author->bio
       }`
-    // It's important to default the slug so that it doesn't return "undefined"
-    const { slug = "" } = context.params
+    
     const post = await client.fetch(query, { slug })
 
     return {
         props: {
-            post
+            post: post || null
         }
     }
 }
