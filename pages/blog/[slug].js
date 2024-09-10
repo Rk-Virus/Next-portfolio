@@ -73,9 +73,10 @@ const Post = ({ post = {} }) => {
                                     </div>
                                 </div>
                             )} */}
-                            <div className="sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-start sm:text-left">
-                                <div className="leading-relaxed text-lg mb-4">
+                            <div className="sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t pt-4 sm:mt-0 text-start sm:text-left">
+                                <div className="leading-relaxed text-lg"  >
                                     <PortableText
+                                        style={{whiteSpace:'pre-line'}}
                                         value={post.body}
                                         components={ptComponents}
                                     />

@@ -78,10 +78,7 @@ const Home = ({ posts }) => {
               </li>
               {/* <li>
                 <span>Email</span> : Ravim70655@gmail.com
-              </li>
-              <li>
-                <span>Phone</span> : +91 9625686379
-              </li> */}
+              </li>*/}
               {/* <li>
                 <span>Real Name</span> : Ravi Mishra{" "}
               </li> */}
@@ -618,12 +615,6 @@ const Home = ({ posts }) => {
                 <div className="row mb-2">
                   <div className="col-1 pt-1 mr-1">
                     <i className="ti-mobile icon-md"></i>
-                  </div>
-                  <div className="col-10 ">
-                    <h6 className="d-inline">
-                      Phone : <br />
-                      <span className="text-muted">+91 9625686379</span>
-                    </h6>
                   </div>
                 </div>
                 <div className="row mb-2">
