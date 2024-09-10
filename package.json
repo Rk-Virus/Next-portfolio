@@ -1,7 +1,7 @@
 {
-  "name": "tech-portfolio",
-  "version": "1.1.0",
-  "description": "This is my tech portfolio to showcase my skills and make you aware about what's going around the world through our blogs.",
+  "name": "next-portfolio",
+  "version": "1.2.0",
+  "description": "This is my tech portfolio to showcase my skills and make you aware about what's going around the world through my blog's perspective.",
   "author": "Rk Virus",
   "main": "gulpfile.js",
   "private": true,
@@ -17,17 +17,17 @@
     "@sanity/client": "^3.4.1",
     "@sanity/image-url": "^1.0.2",
     "groq": "^3.5.0",
-    "next": "12.3.1",
+    "next": "^13.5.6",
     "next-sanity": "^1.0.0",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-portable-text": "^0.5.1"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.12",
     "browser-sync": "^2.26.3",
     "eslint": "8.25.0",
-    "eslint-config-next": "12.3.1",
+    "eslint-config-next": "^13.5.6",
     "postcss": "^8.4.18",
     "tailwindcss": "^3.1.8"
   }
