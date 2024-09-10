@@ -3,6 +3,8 @@ import Script from "next/script";
 import PortableText from "react-portable-text";
 import imageUrlBuilder from "@sanity/image-url";
 import myConfiguredSanityClient from "../client";
+import React, {useEffect} from 'react'
+import {getCookie, setCookie} from '../utils/cookies'
 
 //components
 import Navbar from "../components/Navbar";
@@ -19,10 +21,25 @@ function urlFor(source) {
       : (source = builder.image(source).width(650).url());
   return url;
 }
+
 const Home = ({ posts }) => {
-  // console.log(posts);
+  let newUser = false;
+
+  useEffect(() => {
+    if(!getCookie('isVisited')){
+      newUser = true;
+      console.log("making cookies...");
+      setCookie('isVisited', true, 7);
+      alert('What\'s New?\n1. Our NextJs portfolio upgraded to v13. \n2. Blogs are now editable. \n3. Cookies are added (so we don\'t irritate you with popups ;]). \n*. Lastly, do not forget to give your feedback at the end! (end of this page)\n\n Welcome <_> (click ok)')
+    }
+    else{
+      console.log(document.cookie)
+    }
+  }, [])
+  
+
   return <>
-    <style jsx>{`
+    {/* <style jsx>{`
       .w1 {
         width: 97%;
       }
@@ -41,7 +58,7 @@ const Home = ({ posts }) => {
       .w6 {
         width: 67%;
       }
-    `}</style>
+    `}</style> */}
 
     <Header />
 
@@ -180,7 +197,7 @@ const Home = ({ posts }) => {
                 </div>
               </div>
               <div className="card-body">
-              <h6 className="title text-danger">2023 - Present</h6>
+                <h6 className="title text-danger">2023 - Present</h6>
                 <p>MCA (Master of Computer Applications)</p>
                 <p className="subtitle">
                   Just persuing this to enhance my tech. skills. Just started...
@@ -233,7 +250,7 @@ const Home = ({ posts }) => {
                     aria-valuemax="100"
                   ></div>
                 </div>
-                
+
                 <h6>React with Next.js</h6>
                 <div className="progress mb-3">
                   <div
@@ -331,7 +348,7 @@ const Home = ({ posts }) => {
       </div>
     </section>
 
-{/* <Counter/> */}
+    {/* <Counter/> */}
 
     <section className="section" id="service">
       <div className="container">
@@ -454,7 +471,7 @@ const Home = ({ posts }) => {
       </div>
     </section>
 
-    
+
     {/* pricing section  */}
     <section className="section bg-custom-gray" id="price">
       <div className="container">
@@ -515,7 +532,7 @@ const Home = ({ posts }) => {
               </a>
             </div>
           </div>
-          
+
           <div className="col-md-6 col-lg-4">
             <div className="price-card text-center price-card-requried mb-4">
               <h3 className="price-card-title">Exclusive</h3>
@@ -538,13 +555,13 @@ const Home = ({ posts }) => {
                 </li>
               </ul>
               <a href="#contact">
-              <button className="btn btn-primary btn-rounded w-lg">
-                Contact
-              </button>
+                <button className="btn btn-primary btn-rounded w-lg">
+                  Contact
+                </button>
               </a>
             </div>
           </div>
-          
+
         </div>
       </div>
     </section>
@@ -605,7 +622,7 @@ const Home = ({ posts }) => {
               </form>
             </div>
           </div>
-          
+
           {/* <div className="col-lg-4">
             <div className="contact-info-card">
               <h4 className="contact-title">Get in touch</h4>
@@ -639,7 +656,7 @@ const Home = ({ posts }) => {
               <SocialHandles /> 
             </div>
           </div> */}
-          
+
         </div>
       </div>
     </section>
@@ -668,13 +685,13 @@ const Home = ({ posts }) => {
 };
 export default Home;
 
-export async function getServerSideProps() {
-  const client = myConfiguredSanityClient;
+// export async function getServerSideProps() {
+//   const client = myConfiguredSanityClient;
 
-  const query = `*[_type == "post"][0..3] | order(publishedAt desc)`;
-  const posts = await client.fetch(query);
+//   const query = `*[_type == "post"][0..3] | order(publishedAt desc)`;
+//   const posts = await client.fetch(query);
 
-  return {
-    props: { posts },
-  };
-}
+//   return {
+//     props: { posts },
+//   };
+// }
