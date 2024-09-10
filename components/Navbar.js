@@ -26,17 +26,17 @@ function Navbar({showProfile}) {
           >
             <ul className="navbar-nav mr-auto">
               <li className="nav-item">
-                <Link href="/">
-                <a className="nav-link">
+                <Link href="/" className="nav-link">
+                
                   Home
-                </a>
+                
                 </Link>
               </li>
               <li className="nav-item">
-              <Link href="/#about">
-                <a className="nav-link">
+              <Link href="/#about" className="nav-link">
+                
                   About
-                </a>
+                
                 </Link>
               </li>
               {/* <li className="nav-item">
@@ -48,10 +48,10 @@ function Navbar({showProfile}) {
               </li> */}
 
               <li className="nav-item">
-              <Link href="/blogs">
-                <a className="nav-link">
+              <Link href="/blogs" className="nav-link">
+                
                   Blogs
-                </a>
+                
                 </Link>
               </li>
             </ul>
@@ -67,33 +67,32 @@ function Navbar({showProfile}) {
             <ul className="navbar-nav ml-auto">
               
             <li className="nav-item">
-              <Link href="/#projects">
-                <a className="nav-link">
+              <Link href="/#projects" className="nav-link">
+                
                   Projects
-                </a>
+                
                 </Link>
               </li>
               
               <li className="nav-item">
-              <Link href="/#price">
-                <a className="nav-link">
+              <Link href="/#price" className="nav-link">
+                
                   Pricing
-                </a>
+                
                 </Link>
               </li>
               <li className="nav-item last-item">
-              <Link href="/#contact">
-                <a className="nav-link">
+              <Link href="/#contact" className="nav-link">
+                
                   Contact
-                </a>
+                
                 </Link>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-
-  )
+  );
 }
 
 export default Navbar

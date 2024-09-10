@@ -2828,7 +2828,7 @@ function nodeName( elem, name ) {
   return elem.nodeName && elem.nodeName.toLowerCase() === name.toLowerCase();
 
 };
-var rsingleTag = ( /^<([a-z][^\/\0>:\x20\t\r\n\f]*)[\x20\t\r\n\f]*\/?>(?:<\/\1>|)$/i );
+var rsingleTag = ( (/^<([a-z][^\/\0>:\x20\t\r\n\f]*)[\x20\t\r\n\f]*\/?>(?:<\/\1>|)$/i) );
 
 
 
@@ -3210,7 +3210,7 @@ jQuery.each( {
 		return this.pushStack( matched );
 	};
 } );
-var rnothtmlwhite = ( /[^\x20\t\r\n\f]+/g );
+var rnothtmlwhite = ( (/[^\x20\t\r\n\f]+/g) );
 
 
 
@@ -4482,7 +4482,7 @@ jQuery.fn.extend( {
 		return defer.promise( obj );
 	}
 } );
-var pnum = ( /[+-]?(?:\d*\.|)\d+(?:[eE][+-]?\d+|)/ ).source;
+var pnum = ( (/[+-]?(?:\d*\.|)\d+(?:[eE][+-]?\d+|)/) ).source;
 
 var rcssNum = new RegExp( "^(?:([+-])=|)(" + pnum + ")([a-z%]*)$", "i" );
 
@@ -4711,11 +4711,11 @@ jQuery.fn.extend( {
 		} );
 	}
 } );
-var rcheckableType = ( /^(?:checkbox|radio)$/i );
+var rcheckableType = ( (/^(?:checkbox|radio)$/i) );
 
-var rtagName = ( /<([a-z][^\/\0>\x20\t\r\n\f]*)/i );
+var rtagName = ( (/<([a-z][^\/\0>\x20\t\r\n\f]*)/i) );
 
-var rscriptType = ( /^$|^module$|\/(?:java|ecma)script/i );
+var rscriptType = ( (/^$|^module$|\/(?:java|ecma)script/i) );
 
 
 
@@ -8603,7 +8603,7 @@ var location = window.location;
 
 var nonce = Date.now();
 
-var rquery = ( /\?/ );
+var rquery = ( (/\?/) );
 
 
 
