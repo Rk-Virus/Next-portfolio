@@ -76,10 +76,65 @@ const Post = ({ post = {} }) => {
                             <div className="sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t pt-4 sm:mt-0 text-start sm:text-left">
                                 <div className="leading-relaxed text-lg"  >
                                     <PortableText
-                                        style={{whiteSpace:'pre-line'}}
+                                        style={{ whiteSpace: 'pre-line' }}
                                         value={post.body}
                                         components={ptComponents}
                                     />
+
+                                   {/* Feedback form */}
+                                    <section className="section" id="contact">
+                                        <div className="container">
+                                            <div className="row">
+                                                <div className="col-lg-2"></div>
+                                                <div className="col-lg-8">
+                                                    <div className="contact-form-card">
+                                                        <h4 className="contact-title">Have a feedback?</h4>
+
+                                                        <form action="https://formspree.io/f/xayzeprr" method="post">
+                                                            <div className="form-group">
+                                                                <input
+                                                                    className="form-control"
+                                                                    type="text"
+                                                                    placeholder="Name *"
+                                                                    name="name"
+                                                                    required
+                                                                />
+                                                            </div>
+                                                            <div className="form-group">
+                                                                <input
+                                                                    className="form-control"
+                                                                    type="email"
+                                                                    placeholder="Email *"
+                                                                    name="email"
+                                                                    required
+                                                                />
+                                                            </div>
+                                                            <div className="form-group">
+                                                                <textarea
+                                                                    className="form-control"
+                                                                    placeholder="Message "
+                                                                    rows="7"
+                                                                    name="message"
+                                                                    required
+                                                                ></textarea>
+                                                            </div>
+                                                            <div className="form-group ">
+                                                                <button
+                                                                    type="submit"
+                                                                    className="form-control btn btn-outline-primary"
+                                                                >
+                                                                    Send Message
+                                                                </button>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+
+
+
                                 </div>
                             </div>
                         </div>
@@ -138,7 +193,7 @@ export async function getServerSideProps(context) {
         "authorImage": author->image,
         "authorBio": author->bio
       }`
-    
+
     const post = await client.fetch(query, { slug })
 
     return {

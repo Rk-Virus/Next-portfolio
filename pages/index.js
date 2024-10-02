@@ -28,9 +28,8 @@ const Home = ({ posts }) => {
   useEffect(() => {
     if(!getCookie('isVisited')){
       newUser = true;
-      console.log("making cookies...");
       setCookie('isVisited', true, 7);
-      alert('What\'s New?\n1. Our NextJs portfolio upgraded to v13. \n2. Blogs are now editable. \n3. Cookies are added (so we don\'t irritate you with popups ;]). \n*. Lastly, do not forget to give your feedback at the end! (end of this page)\n\n Welcome <_> (click ok)')
+      alert('What\'s New?\n1. Our NextJs portfolio upgraded to v13. \n2. Blogs are now editable. \n*. Feedback form available in blogs\n\n Welcome <_> (click ok)')
     }
     else{
       console.log(document.cookie)
