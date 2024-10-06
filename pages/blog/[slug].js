@@ -4,6 +4,7 @@ import client from '../../client'
 import Navbar from "../../components/Navbar";
 import imageUrlBuilder from '@sanity/image-url'
 import { PortableText } from '@portabletext/react'
+import Feedback from '../../components/Feedback';
 
 function urlFor(source) {
     return imageUrlBuilder(client).image(source)
@@ -82,56 +83,7 @@ const Post = ({ post = {} }) => {
                                     />
 
                                    {/* Feedback form */}
-                                    <section className="section" id="contact">
-                                        <div className="container">
-                                            <div className="row">
-                                                <div className="col-lg-2"></div>
-                                                <div className="col-lg-8">
-                                                    <div className="contact-form-card">
-                                                        <h4 className="contact-title">Have a feedback?</h4>
-
-                                                        <form action="https://formspree.io/f/xayzeprr" method="post">
-                                                            <div className="form-group">
-                                                                <input
-                                                                    className="form-control"
-                                                                    type="text"
-                                                                    placeholder="Name *"
-                                                                    name="name"
-                                                                    required
-                                                                />
-                                                            </div>
-                                                            <div className="form-group">
-                                                                <input
-                                                                    className="form-control"
-                                                                    type="email"
-                                                                    placeholder="Email *"
-                                                                    name="email"
-                                                                    required
-                                                                />
-                                                            </div>
-                                                            <div className="form-group">
-                                                                <textarea
-                                                                    className="form-control"
-                                                                    placeholder="Message "
-                                                                    rows="7"
-                                                                    name="message"
-                                                                    required
-                                                                ></textarea>
-                                                            </div>
-                                                            <div className="form-group ">
-                                                                <button
-                                                                    type="submit"
-                                                                    className="form-control btn btn-outline-primary"
-                                                                >
-                                                                    Send Message
-                                                                </button>
-                                                            </div>
-                                                        </form>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </section>
+                                   <Feedback blogTitle={post.title} />
 
 
 
