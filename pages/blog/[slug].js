@@ -41,7 +41,7 @@ const Post = ({ post = {} }) => {
                         {/* title  */}
                         <div className="sm:text-3xl text-2xl title-font font-medium text-gray-900 mb-2">{post.title}</div>
                         {post.mainImage && (
-                            <div className="rounded-lg mx-auto h-96 w-auto overflow-hidden">
+                            <div className="rounded-lg mx-auto sm:h-96 my-auto  overflow-hidden">
                                 {/* <img alt="content" className="object-cover object-center h-full w-full" src="https://dummyimage.com/1200x500" /> */}
                                 <img
                                     alt="blog image"
