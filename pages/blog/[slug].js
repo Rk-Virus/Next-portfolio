@@ -5,6 +5,7 @@ import Navbar from "../../components/Navbar";
 import imageUrlBuilder from '@sanity/image-url'
 import { PortableText } from '@portabletext/react'
 import Feedback from '../../components/Feedback';
+import Head from 'next/head';
 
 function urlFor(source) {
     return imageUrlBuilder(client).image(source)
@@ -31,6 +32,9 @@ const ptComponents = {
 const Post = ({ post = {} }) => {
     return (
         <>
+            <Head>
+                <title>{post?.title}</title>
+            </Head>
             <Navbar />
             {/* <article>
                 <h1>{post?.slug?.current}</h1>

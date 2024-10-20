@@ -8,6 +8,13 @@ import myConfiguredSanityClient from "../client";
 import Navbar from "../components/Navbar";
 import SocialHandles from "../components/SocialHandles";
 import Link from 'next/link';
+import Head from 'next/head';
+
+// //metadata | About
+// export const metadata = {
+//   title: "RkVirus | About"
+// }
+
 
 // sanity image builder
 const builder = imageUrlBuilder(myConfiguredSanityClient);
@@ -42,6 +49,9 @@ function Blogs({ posts }) {
       }
     `}</style>
 
+    <Head>
+      <title>RkVirus | Blogs</title>
+    </Head>
     <Navbar showProfile={false} />
     <section className="section pt-4" id="blog">
       <div className="container">
@@ -61,8 +71,8 @@ function Blogs({ posts }) {
                   />
                 </div>
                 <div className="content-holder">
-                  <a href={"/blog/"+post.slug.current}>
-                  <h6 className="title">{post.title}</h6>
+                  <a href={"/blog/" + post.slug.current}>
+                    <h6 className="title">{post.title}</h6>
                   </a>
 
                   <p className="post-details">
@@ -76,8 +86,8 @@ function Blogs({ posts }) {
                   </p>
 
                   <p>
-                  {post.body[0].children[0].text.substring(0, 100) + "..."} 
-              </p>
+                    {post.body[0].children[0].text.substring(0, 100) + "..."}
+                  </p>
                   {/* alternative  */}
                   {/* <PortableText
                     // Pass in block content straight from Sanity.io
@@ -94,7 +104,7 @@ function Blogs({ posts }) {
                     }}
                   /> */}
 
-                  <a href={"/blog/"+post.slug.current} className="read-more">
+                  <a href={"/blog/" + post.slug.current} className="read-more">
                     Read more <i className="ti-angle-double-right"></i>
                   </a>
                 </div>
