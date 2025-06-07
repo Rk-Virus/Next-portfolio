@@ -1,12 +1,12 @@
 {
   "name": "next-portfolio",
-  "version": "1.2.0",
+  "version": "2.2.0",
   "description": "This is my tech portfolio to showcase my skills and make you aware about what's going around the world through my blog's perspective.",
   "author": "Rk Virus",
   "main": "gulpfile.js",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -16,18 +16,25 @@
     "@portabletext/react": "^2.0.2",
     "@sanity/client": "^3.4.1",
     "@sanity/image-url": "^1.0.2",
+    "bootstrap": "^5.3.6",
     "groq": "^3.5.0",
-    "next": "^13.5.6",
-    "next-sanity": "^1.1.0",
+    "next-sanity": "^9.12.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-portable-text": "^0.5.1"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^14.6.1",
     "autoprefixer": "^10.4.12",
+    "babel-jest": "^29.7.0",
     "browser-sync": "^2.26.3",
     "eslint": "8.25.0",
     "eslint-config-next": "^13.5.6",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "next": "^15.3.3",
     "postcss": "^8.4.18",
     "tailwindcss": "^3.1.8"
   }

@@ -14,14 +14,14 @@ import Counter from "../components/Counter";
 import Feedback from "../components/Feedback";
 
 // sanity image builder
-const builder = imageUrlBuilder(myConfiguredSanityClient);
-function urlFor(source) {
-  const url =
-    source == undefined
-      ? (source = "/imgs/blog1.jpg")
-      : (source = builder.image(source).width(650).url());
-  return url;
-}
+// const builder = imageUrlBuilder(myConfiguredSanityClient);
+// function urlFor(source) {
+//   const url =
+//     source == undefined
+//       ? (source = "/imgs/blog1.jpg")
+//       : (source = builder.image(source).width(650).url());
+//   return url;
+// }
 
 const Home = ({ posts }) => {
   let newUser = false;
@@ -76,26 +76,27 @@ const Home = ({ posts }) => {
             I work for the world to make it better, and in between I am
             getting better. Download my Resume to know my current version...
           </p>
-          {/* <button className="btn btn-outline-danger">
+          <br />
+          <button className="btn btn-outline-danger">
             <Link href="/my-resume.pdf" scroll={false}>
                 <i className="icon-down-circled2"></i>Download My Resume
             </Link>
-          </button> */}
-          <h4>[Adding soon...]</h4>
+          </button>
+          {/* <h4>[Adding soon...]</h4> */}
         </div>
         <div className="col-lg-4 about-card">
           <h3 className="font-weight-light header-title">Personal Info</h3>
           <span className="line mb-5"></span>
           <ul className="mt40 info list-unstyled">
             <li>
-              <span>Birthdate</span> : 10/03/2003
-            </li>
-            {/* <li>
-              <span>Email</span> : Ravim70655@gmail.com
-            </li>*/}
-            {/* <li>
               <span>Real Name</span> : Ravi Mishra{" "}
-            </li> */}
+            </li>
+            <li>
+              <span>Email</span> : Ravim70655@gmail.com
+            </li>
+            <li>
+              <span>Birthdate</span> : __/__/2003
+            </li>
             <li>
               <span>Address</span> : India
             </li>
@@ -576,19 +577,6 @@ const Home = ({ posts }) => {
     </section>
 
     <Feedback/>
-    {/* scripts...  */}
-    <Script
-      src="https://code.jquery.com/jquery-3.6.1.min.js"
-      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
-      crossOrigin="anonymous"
-    ></Script>
-    {/* <!-- core  --> */}
-    <Script src="/assets/vendors/jquery/jquery-3.4.1.js"></Script>
-
-    <Script src="/assets/vendors/bootstrap/bootstrap.bundle.js"></Script>
-
-    {/* <!-- bootstrap 3 affix --> */}
-    <Script src="/assets/vendors/bootstrap/bootstrap.affix.js"></Script>
 
     {/* <!-- Google tag (gtag.js) --> */}
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11103724885"></script>
