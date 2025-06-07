@@ -6,6 +6,7 @@ import imageUrlBuilder from '@sanity/image-url'
 import { PortableText } from '@portabletext/react'
 import Feedback from '../../components/Feedback';
 import Head from 'next/head';
+import Script from 'next/script';
 
 function urlFor(source) {
     return imageUrlBuilder(client).image(source)
@@ -34,6 +35,8 @@ const Post = ({ post = {} }) => {
         <>
             <Head>
                 <title>{post?.title}</title>
+                <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4419692674540175"
+     crossorigin="anonymous"></Script>
             </Head>
             <Navbar />
             {/* <article>

@@ -34,6 +34,7 @@ const Feedback = ({blogTitle}) => {
                     type="text"
                     name="blog"
                     value={blogTitle}
+                    onChange={()=>{}}
                   />
                 </div>
                 <div className="form-group">
