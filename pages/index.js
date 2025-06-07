@@ -30,7 +30,7 @@ const Home = ({ posts }) => {
     if(!getCookie('isVisited')){
       newUser = true;
       setCookie('isVisited', true, 7);
-      alert('What\'s New?\n1. Our NextJs portfolio upgraded to v13. \n2. Blogs are now editable. \n*. Feedback form available in blogs\n\n Welcome <_> (click ok)')
+      alert('What\'s New?\n1. Our NextPortfolio upgraded to v2.2 i.e. Next v15 and React v18 and Bootstrap v5. \n\n Welcome <_> (click ok)')
     }
     else{
       console.log(document.cookie)
@@ -39,26 +39,6 @@ const Home = ({ posts }) => {
   
 
   return <>
-    {/* <style jsx>{`
-      .w1 {
-        width: 97%;
-      }
-      .w2 {
-        width: 85%;
-      }
-      .w3 {
-        width: 80%;
-      }
-      .w4 {
-        width: 90%;
-      }
-      .w5 {
-        width: 45%;
-      }
-      .w6 {
-        width: 67%;
-      }
-    `}</style> */}
 
     <Header />
 
