@@ -36,7 +36,7 @@ const Post = ({ post = {} }) => {
                 <title>{post?.title}</title>
                 {/* <meta name="google-adsense-account" content="ca-pub-4419692674540175" /> */}
             </Head>
-            <Navbar />
+            {/* <Navbar /> */}
             {/* <article>
                 <h1>{post?.slug?.current}</h1>
                 </article> */}

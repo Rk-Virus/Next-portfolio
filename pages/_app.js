@@ -21,6 +21,7 @@ function MyApp({ Component, pageProps }) {
         />
         <meta name="author" content="Rk Virus" />
         <meta name="keywords" content="tech, blogs, rkvirus, tech updates, e-diary, rk virus blogs" />
+        <meta name="google-adsense-account" content="ca-pub-4419692674540175"></meta>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Component {...pageProps} />

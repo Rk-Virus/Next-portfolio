@@ -414,42 +414,131 @@ const Home = ({ posts }) => {
     </section>
 
     {/* project section  */}
-    <section className="text-gray-600 body-font" id="projects">
-      <div className="container px-5  mx-auto">
+    <section className="text-gray-600 body-font" id="projects" style={{ background: "#f8f9fa", padding: "40px 0" }}>
+      <div className="container px-3 mx-auto">
         <div className="flex flex-wrap w-full mb-10">
           <div className="lg:w-1/4 w-full mb-6 lg:mb-0">
             <h1 className="sm:text-4xl text-3xl font-medium title-font mb-2 text-gray-900">Projects</h1>
             <div className="h-1 w-20 bg-red-400 rounded"></div>
           </div>
-          <p className="lg:w-3/4 w-full leading-relaxed text-black-500 blockquote">Embark on a global digital journey with our streamlined projects, blending React.js, Next.js, Django, React Native, and Sanity. From redefining user experiences to optimizing content management, we prioritize innovation, security, and global collaboration for an elevated digital presence. Contact us for efficient and impactful solutions.</p>
+          <p className="lg:w-3/4 w-full leading-relaxed text-black-500 blockquote">
+            Modern projects of Web, Mobile App and Desktop Development. I deliver secure, innovative, and user-friendly solutions. Contact me for results.
+          </p>
         </div>
 
-        <div className="flex flex-wrap m-4">
-          <div className="xl:w-full md:w-1/2">
-            <div className="bg-gray-100 p-6 rounded-lg">
+        <div className="row g-4">
+          <div className="col-12 col-md-6 mb-4">
+            <div className="bg-white p-4 rounded-lg shadow-sm project-card h-100">
               <Link href={"https://www.ekonopro.com/"} legacyBehavior>
-                <img className="h-80 rounded w-full object-cover object-center mb-6" src="/imgs/ekonopro.png" alt="content" /></Link>
-              <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font">NEXT+Sanity</h3>
+                <a target="_blank" rel="noopener noreferrer">
+                  <img className="img-fluid rounded w-100 mb-4" style={{ maxHeight: "320px", objectFit: "cover" }} src="/imgs/ekonopro.png" alt="Ekonopro" />
+                </a>
+              </Link>
+              <div className="d-flex align-items-center mb-2">
+                <span className="badge bg-primary me-2">Client</span>
+                <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font mb-0">NEXT+Sanity</h3>
+              </div>
               <h2 className="text-lg text-gray-900 font-medium title-font mb-2">Ekonopro.com</h2>
-              <p className="leading-relaxed text-base">Discover economics effortlessly with our Next.js and Sanity.io-powered learning site. Engage in interactive lessons, real-world case studies, and seamless navigation for a dynamic educational experience. Elevate your understanding of economic principles with us!</p>
-              {/* <h6> <Link href={"https://github.com/trg-projects/Economics-Site"}> Checkout GitHub Repo </Link> </h6> */}
+              <p className="leading-relaxed text-base">Discover economics effortlessly with our Next.js and Sanity.io-powered learning site.</p>
             </div>
           </div>
-
-
-          <div className="xl:w-full md:w-1/2 mt-4">
-            <div className="bg-gray-200 p-6 rounded-lg">
+          <div className="col-12 col-md-6 mb-4">
+            <div className="bg-white p-4 rounded-lg shadow-sm project-card h-100">
               <Link href={"https://aksar.org.in/"} legacyBehavior>
-                <img className="h-80 rounded w-full object-cover object-center mb-6" src="/imgs/Aksar.png" alt="content" /></Link>
-              <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font">Django Project</h3>
+                <a target="_blank" rel="noopener noreferrer">
+                  <img className="img-fluid rounded w-100 mb-4" style={{ maxHeight: "320px", objectFit: "cover" }} src="/imgs/Aksar.png" alt="Aksar" />
+                </a>
+              </Link>
+              <div className="d-flex align-items-center mb-2">
+                <span className="badge bg-primary me-2">Client</span>
+                <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font mb-0">Django Project</h3>
+              </div>
               <h2 className="text-lg text-gray-900 font-medium title-font mb-2">Aksar.org.in</h2>
               <p className="leading-relaxed text-base">Aksar is counselling plateform to provide you aid from minute issues to serious health problems.</p>
-              {/* <h6> <Link href={"https://github.com/trg-projects/Economics-Site"}> Checkout GitHub Repo </Link> </h6> */}
             </div>
           </div>
 
+          <div className="col-12 col-md-6 mb-4">
+            <div className="bg-white p-4 rounded-lg shadow-sm project-card h-100">
+              <Link href={"https://rk-virus.github.io/Weather-App/"} legacyBehavior>
+                <a target="_blank" rel="noopener noreferrer">
+                  <img className="img-fluid rounded w-100 mb-4" style={{ maxHeight: "320px", objectFit: "cover" }} src="/imgs/WeatherApp.png" alt="Weather App" />
+                </a>
+              </Link>
+              <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font">HTML, CSS, JS & Rest API</h3>
+              <h2 className="text-lg text-gray-900 font-medium title-font mb-2">Weather App</h2>
+              <p className="leading-relaxed text-base">A simple weather forecast application that fetches current weather data.</p>
+            </div>
+          </div>
+
+          <div className="col-12 col-md-6 mb-4">
+            <div className="bg-white p-4 rounded-lg shadow-sm project-card h-100">
+              <Link href={"https://github.com/Rk-Virus/Save-the-dragonfly"} legacyBehavior>
+                <a target="_blank" rel="noopener noreferrer">
+                  <img className="img-fluid rounded w-100 mb-4" style={{ maxHeight: "320px", objectFit: "cover" }} src="/imgs/dragonflygame.png" alt="Aksar" />
+                </a>
+              </Link>
+              <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font">Pygame Project</h3>
+              <h2 className="text-lg text-gray-900 font-medium title-font mb-2">Game: Save the dragonfly</h2>
+              <p className="leading-relaxed text-base">A simple and fun Pygame project where you help a dragonfly escape dangers and stay alive!</p>
+            </div>
+          </div>
+
+          <div className="col-12 col-md-6 mb-4">
+            <div className="bg-white p-4 rounded-lg shadow-sm project-card h-100">
+              <Link href={"https://rk-virus.github.io/JS-Notes-App/"} legacyBehavior>
+                <a target="_blank" rel="noopener noreferrer">
+                  <img className="img-fluid rounded w-100 mb-4" style={{ maxHeight: "320px", objectFit: "cover" }} src="/imgs/JS Notes App.png" alt="Aksar" />
+                </a>
+              </Link>
+              <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font">HTML, CSS and JavaScript</h3>
+              <h2 className="text-lg text-gray-900 font-medium title-font mb-2">JS Notes Taking App</h2>
+              <p className="leading-relaxed text-base">A lightweight and intuitive note-taking application built with JavaScript.
+Create, update, search, and delete your notes effortlessly.
+
+</p>
+            </div>
+          </div>
+
+          <div className="col-12 col-md-6 mb-4">
+            <div className="bg-white p-4 rounded-lg shadow-sm project-card h-100">
+              <Link href={"https://ai-blog-generator-7h2r.onrender.com/"} legacyBehavior>
+                <a target="_blank" rel="noopener noreferrer">
+                  <img className="img-fluid rounded w-100 mb-4" style={{ maxHeight: "320px", objectFit: "cover" }} src="/imgs/aigenerator.png" alt="Aksar" />
+                </a>
+              </Link>
+              <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font">Flask, Tailwind and Langchain</h3>
+              <h2 className="text-lg text-gray-900 font-medium title-font mb-2">AI Blog Generator</h2>
+              <p className="leading-relaxed text-base">A simple AI-powered blog generator.</p>
+            </div>
+          </div>
         </div>
       </div>
+      <style jsx>{`
+        .project-card {
+          transition: box-shadow 0.2s;
+        }
+        .project-card:hover {
+          box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+          transform: translateY(-2px) scale(1.01);
+        }
+        @media (max-width: 767px) {
+          #projects .container {
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+          }
+          .project-card img {
+            max-height: 200px !important;
+          }
+        }
+        section {
+          margin-bottom: 2rem;
+        }
+        .btn, button.btn {
+          border-radius: 30px;
+          font-weight: 500;
+        }
+      `}</style>
     </section>
 
 

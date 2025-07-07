@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 
 function Navbar({ showProfile }) {
@@ -8,7 +8,7 @@ function Navbar({ showProfile }) {
   // Handle scrolling effect
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) {
+      if (window.scrollY > 550) {
         setIsScrolled(true);
       } else {
         setIsScrolled(false);
@@ -58,15 +58,14 @@ function Navbar({ showProfile }) {
               </Link>
             </li>
           </ul>
-          {showProfile && (
-            <ul className="navbar-nav brand">
+          <ul className="navbar-nav brand">
+            {!isScrolled ? (
               <img src="/imgs/avatar.jpg" className="brand-img" alt="profile img" />
-              <li className="brand-txt">
-                <h5 className="brand-title">Rk Virus</h5>
-                <div className="brand-subtitle">Developer</div>
-              </li>
-            </ul>
-          )}
+            ) : <li className="brand-txt">
+              <h5 className="brand-title">Rk Virus</h5>
+              <div className="brand-subtitle">Developer</div>
+            </li>}
+          </ul>
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
               <Link href="/#projects" className="nav-link">

@@ -52,7 +52,7 @@ function Blogs({ posts }) {
     <Head>
       <title>RkVirus | Blogs</title>
     </Head>
-    <Navbar showProfile={false} />
+    {/* <Navbar showProfile={false} /> */}
     <section className="section pt-4" id="blog">
       <div className="container">
         <h2 className="mb-3 title header-title">
