@@ -3,8 +3,8 @@ import Script from "next/script";
 import PortableText from "react-portable-text";
 import imageUrlBuilder from "@sanity/image-url";
 import myConfiguredSanityClient from "../client";
-import React, {useEffect} from 'react'
-import {getCookie, setCookie} from '../utils/cookies'
+import React, { useEffect } from 'react'
+import { getCookie, setCookie } from '../utils/cookies'
 
 //components
 import Navbar from "../components/Navbar";
@@ -28,16 +28,16 @@ const Home = ({ posts }) => {
   let newUser = false;
 
   useEffect(() => {
-    if(!getCookie('isVisited')){
+    if (!getCookie('isVisited')) {
       newUser = true;
       setCookie('isVisited', true, 7);
       alert('What\'s New?\n1. Our NextPortfolio upgraded to v2.2 i.e. Next v15 and React v18 and Bootstrap v5. \n\n Welcome <_> (click ok)')
     }
-    else{
+    else {
       console.log(document.cookie)
     }
   }, [])
-  
+
 
   return <>
 
@@ -60,7 +60,7 @@ const Home = ({ posts }) => {
           <br />
           <button className="btn btn-outline-danger">
             <Link href="/my-resume.pdf" scroll={false}>
-                <i className="icon-down-circled2"></i>Download My Resume
+              <i className="icon-down-circled2"></i>Download My Resume
             </Link>
           </button>
           {/* <h4>[Adding soon...]</h4> */}
@@ -495,9 +495,9 @@ const Home = ({ posts }) => {
               <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font">HTML, CSS and JavaScript</h3>
               <h2 className="text-lg text-gray-900 font-medium title-font mb-2">JS Notes Taking App</h2>
               <p className="leading-relaxed text-base">A lightweight and intuitive note-taking application built with JavaScript.
-Create, update, search, and delete your notes effortlessly.
+                Create, update, search, and delete your notes effortlessly.
 
-</p>
+              </p>
             </div>
           </div>
 
@@ -550,13 +550,15 @@ Create, update, search, and delete your notes effortlessly.
 
     <Pricing />
 
-    <Feedback/>
+    <Feedback />
 
     {/* <!-- Google tag (gtag.js) --> */}
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11103724885"></script>
 
 
     {/* <!-- Event snippet for Outbound click conversion page --> */}
+    <script src="https://cdn.botpress.cloud/webchat/v3.3/inject.js" defer></script>
+    <script src="https://files.bpcontent.cloud/2025/10/16/10/20251016100456-WIGKZENN.js" defer></script>
 
   </>;
 };
